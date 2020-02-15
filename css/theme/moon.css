@@ -144,6 +144,7 @@ body {
   font-style: italic; }
 
 .reveal pre {
+  white-space: pre-wrap;
   display: block;
   position: relative;
   width: 90%;
