@@ -1,0 +1,18 @@
+// sample(cpp)
+class Example {
+    Example exp;
+    exp.doIt();
+}
+// end-sample
+
+// sample(java)
+public class Example {
+    Example exp = new Example();
+}
+// end-sample
+
+// sample(javascript)
+class Example {
+    let exp = new Example();
+}
+// end-sample

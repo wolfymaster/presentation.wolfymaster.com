@@ -1,0 +1,17 @@
+// sample(cpp)
+class Example {
+    public Example() {}
+}
+// end-sample
+
+// sample(java)
+public class Example {
+    public Example() {}
+}
+// end-sample
+
+// sample(javascript)
+class Example {
+    constructor() {}
+}
+// end-sample
