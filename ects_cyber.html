@@ -29,7 +29,28 @@
     <style type="text/css">
         .space>li {
             margin: 10px 0;
-            font-size: 16px;
+        }
+
+        .tagline {
+            margin-top: -20px;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .fs24 {
+            font-size:24px;
+        }
+
+        .p20 {
+            padding: 20px 0;
+        }
+
+        .heading.invert {
+            background: #eee8d5;
+            color: #002b36;
+            padding: 10px;
         }
     </style>
 </head>
@@ -162,87 +183,147 @@ Description: Explain the importance of reporting cyber incidents and suspicious 
 
                 <section>
                     <h2>Malware</h2>
-                    <ul style="font-size:24px">
-                        <li class="fragment" style="padding: 10px 0;"><strong>Ransomware:</strong> Disables victim's access to data until ransom is paid</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Spyware:</strong> collects user activity data without their knowledge</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Adware:</strong> Serves unwanted advertisements</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Trojan:</strong> Disguises itself as desirable code</li> 
-                        <li class="fragment" style="padding: 10px 0;"><strong>Rootkit:</strong> Grants hackers remote control of victim's device</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Keylogger:</strong> Monitors user's keystrokes</li>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Ransomware:</strong> Disables victim's access to data until ransom is paid</li>
+                        <li class="fragment"><strong>Spyware:</strong> collects user activity data without their knowledge</li>
+                        <li class="fragment"><strong>Adware:</strong> Serves unwanted advertisements</li>
+                        <li class="fragment"><strong>Trojan:</strong> Disguises itself as desirable code</li> 
+                        <li class="fragment"><strong>Rootkit:</strong> Grants hackers remote control of victim's device</li>
+                        <li class="fragment"><strong>Keylogger:</strong> Monitors user's keystrokes</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Phishing</h2>
-                    <ul style="font-size:24px">
-                        <li class="fragment" style="padding: 10px 0;"><strong>Emails:</strong> Emails are designed to appear to come from a legitimate source</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Spear Phishing:</strong> Targeted phishing email attack relies on data that a cyber criminal has previously collected about the victim or the victim's employer</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Fake/Look-alike Websites:</strong> Malicious website leverages subtle changes to a known URL to trick users</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>"Evil Twin" Wi-Fi (MITM):</strong> Spoofing free/open Wi-Fi access points. Victims unknowingly log into the wrong hotspot</li>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Emails:</strong> Emails are designed to appear to come from a legitimate source</li>
+                        <li class="fragment"><strong>Spear Phishing:</strong> Targeted phishing email attack relies on data that a cyber criminal has previously collected about the victim or the victim's employer</li>
+                        <li class="fragment"><strong>Fake/Look-alike Websites:</strong> Malicious website leverages subtle changes to a known URL to trick users</li>
+                        <li class="fragment"><strong>"Evil Twin" Wi-Fi (MITM):</strong> Spoofing free/open Wi-Fi access points. Victims unknowingly log into the wrong hotspot</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Social Engineering</h2>
-                    <ul style="font-size:24px">
+                    <ul class="space fs24">
                         <li class="fragment"></li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>OWASP Top 10</h2>
-                    <ul style="font-size:24px">
-                        <li class="fragment" style="padding: 10px 0;"><strong>Broken Access Control:</strong> Access control enforces policy such that users cannot act outside of their intended permissions</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Cryptographic Failures:</strong> Data permisisons in transit and at rest. GDPR, PCI. Is any data transmitted in clear text? Old or weak cryptographic algorithms</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Injection:</strong> User-supplied data is not validated, filtered or sanitized by the application. SQL Injection</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Insecure Design:</strong> Risks related to design and architectural flaws. Incorrect threat modeling or missing security controls</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Security Misconfiguration:</strong> Application missing security harding. Unneccesssary features are enabled or installed (ports, services, accounts, privileges). Default accounts and passwords still enabled and unchanged. Error handling reveals stack traces or other overly informative error messages to users</li>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Broken Access Control:</strong> Access control enforces policy such that users cannot act outside of their intended permissions</li>
+                        <li class="fragment"><strong>Cryptographic Failures:</strong> Data permisisons in transit and at rest. GDPR, PCI. Is any data transmitted in clear text? Old or weak cryptographic algorithms</li>
+                        <li class="fragment"><strong>Injection:</strong> User-supplied data is not validated, filtered or sanitized by the application. SQL Injection</li>
+                        <li class="fragment"><strong>Insecure Design:</strong> Risks related to design and architectural flaws. Incorrect threat modeling or missing security controls</li>
+                        <li class="fragment"><strong>Security Misconfiguration:</strong> Application missing security harding. Unneccesssary features are enabled or installed (ports, services, accounts, privileges). Default accounts and passwords still enabled and unchanged. Error handling reveals stack traces or other overly informative error messages to users</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>OWASP Top 10</h2>
-                    <ul style="font-size:24px">
-                        <li class="fragment" style="padding: 10px 0;"><strong>Vulnerable and Outdated Components:</strong> Unknown versions of components. Unsupported or out of date software. Not upgrading applications or dependecies in a timely fashion.</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Identification and Authentication Failures:</strong> Application permits brute force, weak or well-known passwords, weakly hashed passwords, missing multi-factor authentication</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Software and Data Integrity Failures:</strong> Application relies on plugins, libraries, or modules from untrusted sources. Supply chain attacks</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Security Logging and Monitoring Failures:</strong> Without logging breaches cannot be detected. Auditable events should be logged and actively monitored for suspicous activity</li>
-                        <li class="fragment" style="padding: 10px 0;"><strong>Service-Side Request Forgery:</strong> Application fetches remote resource without validating the user-supplied URL.</li>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Vulnerable and Outdated Components:</strong> Unknown versions of components. Unsupported or out of date software. Not upgrading applications or dependecies in a timely fashion.</li>
+                        <li class="fragment"><strong>Identification and Authentication Failures:</strong> Application permits brute force, weak or well-known passwords, weakly hashed passwords, missing multi-factor authentication</li>
+                        <li class="fragment"><strong>Software and Data Integrity Failures:</strong> Application relies on plugins, libraries, or modules from untrusted sources. Supply chain attacks</li>
+                        <li class="fragment"><strong>Security Logging and Monitoring Failures:</strong> Without logging breaches cannot be detected. Auditable events should be logged and actively monitored for suspicous activity</li>
+                        <li class="fragment"><strong>Service-Side Request Forgery:</strong> Application fetches remote resource without validating the user-supplied URL.</li>
                     </ul>
                 </section>
             </section>
 
+            <!-- Field of cybersecurity -->
+            <section>
+                <section>
+                    <img src="images/cyber/cyberlayers.bmp" width="100%" />
+                </section>
+                <section>
+                    <img src="images/cyber/cyberlayers2.bmp" width="100%" />
+                </section>
+                <section>
+                    <img src="images/cyber/redblueteam.bmp" width="100%" />
+                </section>
+                <section>
+                    <img src="images/cyber/domains.bmp" width="100%" />
+                </section>
+            </section>
+
+            <!-- Resources-->
+            <section>
+                <h2>Resources</h2>
+            </section>
+
             <!-- Cyber Hygiene -->
             <section>
-                <h2>Good Cyber Hygiene (what you can do now)</h2>
-                <div class="fragment">
-                    Update Software Regularly
-                    <div>
-                        Update apps, web browers, ect regularly to ensure you are using the latest versions
-                        Delete apps you no longer use
-                        Only download apps from reputable or offical sources
+                <section>
+                    <div class="left">
+                        <h2>Good Cyber Hygiene</h2>
+                        <div class="fs24 tagline" style="font-style:italic;">
+                            (what you can do now)
+                        </div>
                     </div>
-                </div>
-                <div class="fragment">Set strong passwords (use a password manager)</div>
-                <div class="fragment">Use multi-factor authentication</div>
-                <div class="fragment">Back up regularly (3-2-1 rule)</div>
-                <div class="fragment">
-                    Ensure privacy
-                    <div>
-                        Don't post private information publicly on social media.
-                        Avoid quizzes, games, or surveys on social media that ask for sensitive information
-                        Be cautious about the permissions you accept for the apps you use 
-                        Use a VPN when connecting to public Wi-Fi
-                        Always use https
+    
+                    <div class="fragment left p20">
+                        <h4 class="heading invert">Update Software Regularly</h4>
+                        <div class="fs24">
+                            Update apps, web browers, ect regularly to ensure you are using the latest versions. Delete apps you no longer use and only download apps from reputable or offical sources.
+                        </div>
                     </div>
-                </div>
-                <div class="fragment">
-                    Avoid social engineering attacks
-                    <div>
-                        Avoid clicking on suspicious links
-                        Avoid downloading suspicious attachments or files 
+    
+                    <div class="fragment left p20">
+                        <div style="display: flex; gap: 10px; align-content: center; justify-content: center;">
+                            <div>
+                                <h4 class="heading invert">Responsible Password Management</h4>
+                                <div class="fs24">
+                                    Use passwords with a minimum of 12 characters and containing uppercase, lowercase, numbers and symbols. Better yet, use a password manager and 24 character passwords!
+                                </div>
+                            </div>
+                            <div>
+                                <a href="images/cyber/password-cracking-2023.jpeg" target="_blank">
+                                    <img src="images/cyber/password-cracking-2023.jpeg" width="100%" style="margin:0;" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <section>
+                    <div class="left p20">
+                        <h4 class="heading invert">Use multi-factor authentication (MFA)</h4>
+                        <div class="fs24">
+                            Factors include: (i) something you know (e.g., password/personal identification number [PIN]); (ii) something you have (e.g., cryptographic identification device, token); or (iii) something you are (e.g., biometric).
+                            Authentication using two or more different factors to achieve authentication.
+                        </div>
+                    </div>
+
+                    <div class="fragment left p20">
+                        <h4 class="heading invert">Back up regularly (3-2-1 rule)</h4>
+                        <div class="fs24">
+                            Ensure you have regular, automated backups. You should have <strong>3</strong> copies of your data on <strong>2</strong> different media with <strong>1</strong> copy off-site for disaster recovery.
+                        </div>
+                    </div>
+                    <div class="fragment left p20">
+                        <h4 class="heading invert">Privacy</h4>
+                        <div class="fs24">
+                            Avoid quizzes, games, or surveys on social media that ask for sensitive information. Don't post private information publicly on social media.
+                            Be cautious about the permissions you accept for the apps you use. Use a VPN when connecting to public Wi-Fi. <strong>Always</strong> use https.
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="left p20">
+                        <h4 class="heading invert">Watch out for social engineering attacks</h4>
+                        <div class="fs24">
+                            Avoid clicking on suspicious links. Avoid downloading suspicious attachments or files.
+                            Never disclose security codes over the phone. Hang up and call back if you receive a suspicious call. 
+                        </div>
+                        <div class="p20" style="text-align: center;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fHhNWAKw0bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <!-- My Early History -->
