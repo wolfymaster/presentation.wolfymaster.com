@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ECTS Entrepreneur Presentation</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- plugin css -->
+    <link rel="stylesheet" href="plugin/copycode/copycode.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style type="text/css">
+        .space>li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+<!--
+    - Cyber Hygene
+    - Look-alike domains
+    - phishing attempts
+    - analyst roles
+    - usb rubber ducky attack
+    - red team vs blue team
+    - owasp top 10
+
+Mr Robot - Phished: https://www.youtube.com/watch?v=O5MvtqgLYeA
+DefCon Hacking: https://www.youtube.com/watch?v=fHhNWAKw0bY
+
+
+
+Slide 3:
+Topic: Importance of Cybersecurity
+Description: Discuss the significance of cybersecurity in today's digital world, emphasizing the risks and consequences of cyber threats.
+
+
+Slide 5:
+Topic: Cybersecurity Layers
+Description: Explore the layers of cybersecurity, including physical security, network security, application security, and data security. Explain how each layer contributes to overall protection.
+
+Slide 6:
+Topic: Password Security
+Description: Emphasize the importance of strong passwords and password hygiene. Provide tips for creating strong passwords and avoiding common mistakes.
+
+Slide 7:
+Topic: Social Engineering
+Description: Define social engineering and its techniques, such as phishing and pretexting. Discuss real-life examples and ways to recognize and prevent social engineering attacks.
+
+Slide 8:
+Topic: Malware Protection
+Description: Explain different types of malware (viruses, ransomware, etc.) and strategies to protect against them, such as using antivirus software and being cautious of suspicious downloads.
+
+Slide 9:
+Topic: Secure Web Browsing
+Description: Discuss safe web browsing practices, including verifying website security (HTTPS), avoiding suspicious links, and being cautious with personal information online.
+
+Slide 10:
+Topic: Secure Mobile Usage
+Description: Highlight the importance of securing mobile devices through methods like passcodes, biometrics, app permissions, and keeping software up to date.
+
+Slide 11:
+Topic: Data Privacy
+Description: Explain the significance of protecting personal data, discussing concepts like data breaches, privacy settings, and responsible online behavior.
+
+Slide 13:
+Topic: Ethical Hacking
+Description: Introduce the concept of ethical hacking (penetration testing) and its role in identifying vulnerabilities to improve cybersecurity. Mention ethical hacking certifications and careers.
+
+Slide 14:
+Topic: Careers in Cybersecurity
+Description: Highlight various career opportunities in cybersecurity, including roles like cybersecurity analyst, ethical hacker, and security consultant. Discuss the growing demand for skilled professionals.
+
+Slide 15:
+Topic: Cybersecurity Education and Resources
+Description: Provide information on educational paths and resources to learn more about cybersecurity, such as cybersecurity courses, online platforms, and competitions.
+
+Slide 16:
+Topic: Cybersecurity Best Practices
+Description: Summarize essential cybersecurity best practices, including regularly updating software, backing up data, being vigilant about phishing emails, and practicing good password hygiene.
+
+Slide 17:
+Topic: Case Study: NotPetya Ransomware
+Description: Present a real-life example of a significant cyber attack, such as the NotPetya ransomware attack. Discuss the impact and lessons learned.
+
+Slide 18:
+Topic: Online Safety Tips
+Description: Provide practical tips for staying safe online, such as being cautious with sharing personal information, avoiding public Wi-Fi, and using two-factor authentication.
+
+Slide 19:
+Topic: Reporting Cyber Incidents
+Description: Explain the importance of reporting cyber incidents and suspicious activities to appropriate authorities, such as school administrators, parents, or law enforcement.
+
+
+-->
+
+            <!-- Intro -->
+            <section>
+                <h1>Paul Sherer</h1>
+                <div style="display:flex; justify-content:space-around">
+                    <div>
+                        <div>SightGain</div>
+                        <div style="font-size:22px">Engineering Director</div>
+                    </div>
+                    <div>
+                        <div>Mandiant/Google</div>
+                        <div style="font-size:22px">CyberSecurity Instructor</div>
+                    </div>
+                </div>
+                <aside class="notes"></aside>
+            </section>
+
+            <!-- Goal -->
+            <section>
+                <h1>Objective</h1>
+                <h3>Introduce the field of CyberSecurity</h3>
+            </section>
+
+            <!-- Class Question -->
+            <section>
+                <h1>Question</h1>
+                <div>Who is interested in cybersecurity?</div>
+            </section>
+
+            <!-- What is cybersecurity? -->
+            <section>
+                <section>
+                    <div>What is cybersecurity?</div>
+                    <div class="fragment">
+                        <a href="https://www.youtube.com/watch?v=msX4oAXpvUE" target="_blank">Not This.</a>
+                    </div>    
+                </section>
+                
+                <section>
+                    <h3>Types of cyber threats</h3>
+                    <div class="fragment">Malware</div>
+                    <div class="fragment">Phishing</div>
+                    <div class="fragment">Social Engineering</div>
+                    <div class="fragment">OWASP Top 10</div>
+                </section>
+
+                <section>
+                    <h2>Malware</h2>
+                    <ul style="font-size:24px">
+                        <li class="fragment" style="padding: 10px 0;"><strong>Ransomware:</strong> Disables victim's access to data until ransom is paid</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Spyware:</strong> collects user activity data without their knowledge</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Adware:</strong> Serves unwanted advertisements</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Trojan:</strong> Disguises itself as desirable code</li> 
+                        <li class="fragment" style="padding: 10px 0;"><strong>Rootkit:</strong> Grants hackers remote control of victim's device</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Keylogger:</strong> Monitors user's keystrokes</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Phishing</h2>
+                    <ul style="font-size:24px">
+                        <li class="fragment" style="padding: 10px 0;"><strong>Emails:</strong> Emails are designed to appear to come from a legitimate source</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Spear Phishing:</strong> Targeted phishing email attack relies on data that a cyber criminal has previously collected about the victim or the victim's employer</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Fake/Look-alike Websites:</strong> Malicious website leverages subtle changes to a known URL to trick users</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>"Evil Twin" Wi-Fi (MITM):</strong> Spoofing free/open Wi-Fi access points. Victims unknowingly log into the wrong hotspot</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Social Engineering</h2>
+                    <ul style="font-size:24px">
+                        <li class="fragment"></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>OWASP Top 10</h2>
+                    <ul style="font-size:24px">
+                        <li class="fragment" style="padding: 10px 0;"><strong>Broken Access Control:</strong> Access control enforces policy such that users cannot act outside of their intended permissions</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Cryptographic Failures:</strong> Data permisisons in transit and at rest. GDPR, PCI. Is any data transmitted in clear text? Old or weak cryptographic algorithms</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Injection:</strong> User-supplied data is not validated, filtered or sanitized by the application. SQL Injection</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Insecure Design:</strong> Risks related to design and architectural flaws. Incorrect threat modeling or missing security controls</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Security Misconfiguration:</strong> Application missing security harding. Unneccesssary features are enabled or installed (ports, services, accounts, privileges). Default accounts and passwords still enabled and unchanged. Error handling reveals stack traces or other overly informative error messages to users</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>OWASP Top 10</h2>
+                    <ul style="font-size:24px">
+                        <li class="fragment" style="padding: 10px 0;"><strong>Vulnerable and Outdated Components:</strong> Unknown versions of components. Unsupported or out of date software. Not upgrading applications or dependecies in a timely fashion.</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Identification and Authentication Failures:</strong> Application permits brute force, weak or well-known passwords, weakly hashed passwords, missing multi-factor authentication</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Software and Data Integrity Failures:</strong> Application relies on plugins, libraries, or modules from untrusted sources. Supply chain attacks</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Security Logging and Monitoring Failures:</strong> Without logging breaches cannot be detected. Auditable events should be logged and actively monitored for suspicous activity</li>
+                        <li class="fragment" style="padding: 10px 0;"><strong>Service-Side Request Forgery:</strong> Application fetches remote resource without validating the user-supplied URL.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Cyber Hygiene -->
+            <section>
+                <h2>Good Cyber Hygiene (what you can do now)</h2>
+                <div class="fragment">
+                    Update Software Regularly
+                    <div>
+                        Update apps, web browers, ect regularly to ensure you are using the latest versions
+                        Delete apps you no longer use
+                        Only download apps from reputable or offical sources
+                    </div>
+                </div>
+                <div class="fragment">Set strong passwords (use a password manager)</div>
+                <div class="fragment">Use multi-factor authentication</div>
+                <div class="fragment">Back up regularly (3-2-1 rule)</div>
+                <div class="fragment">
+                    Ensure privacy
+                    <div>
+                        Don't post private information publicly on social media.
+                        Avoid quizzes, games, or surveys on social media that ask for sensitive information
+                        Be cautious about the permissions you accept for the apps you use 
+                        Use a VPN when connecting to public Wi-Fi
+                        Always use https
+                    </div>
+                </div>
+                <div class="fragment">
+                    Avoid social engineering attacks
+                    <div>
+                        Avoid clicking on suspicious links
+                        Avoid downloading suspicious attachments or files 
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Early History -->
+            <section>
+                <!-- Problem Statement -->
+                <section>
+                    <h2>Lets go back to ~2004</h2>
+                    <div>
+                        <p><strong>Problem</strong>: Build an ecommerce store for my parent's business</p>
+
+                        <ul>
+                            <li>How do I have users that can login</li>
+                            <li>How do I connect to a database?</li>
+                            <li>Why does the site look like garbage on another computer?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- How did i get started or know where to start? -->
+                <section>
+                    <h2>How did i get started or know where to start?</h2>
+                    <div class="fragment">
+                        <img src="./images/html_css_book.jpg" alt="" width="300">
+                        <img src="./images/php_mysql_book.jpg" alt="" width="290">
+                    </div>
+                </section>
+
+                <!-- Numa Numa Video -->
+                <section>
+                    <h2>Anybody know this guy?... </h2>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/Cqd1Gvq-RBY?rel=0" width="500" height="300"></iframe>
+                    </div>
+                </section>
+
+                <!-- Numa Numa Detail -->
+                <section>
+                    <div>
+                        The “Numa Numa Dance”, was a webcam video created by Gary Brolsma in November 2004.
+                        It was submitted online to Newgrounds.com on December 2004. This website was unique at the time,
+                        because Newgrounds mainly offered Flash based movies and animations as YouTube didn't exist yet.
+                    </div>
+                </section>
+
+                <!-- New Problem Statement -->
+                <section>
+                    <h2>New problem</h2>
+
+                    <p>I need a place to upload my videos <br />so friends can watch them.</p>
+                    <p class="fragment">just kept going from there</p>
+                    <div class="fragment">
+                        <img src="./images/learning.png" width="420" />
+                    </div>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>built a lot on free subdomains</li>
+                            <li>by 16 started taking on clients and building stuff for other people</li>
+                            <li>college</li>
+                            <li>post-college</li>
+                            <li>Took 1 CS course in High School in 8th grade</li>
+                            <li>Started 1st business in 2009</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <!-- My library -->
+                <!--            <section>-->
+                <!--                <h3>My "library" has grown a bit over the years</h3>-->
+                <!--                <img src="./images/library.jpg" alt="">-->
+
+                <!--                <aside class="notes">-->
+
+                <!--                </aside>-->
+                <!--            </section>-->
+            </section>
+
+            <!-- My History cont. -->
+            <section>
+                <!-- WolfyMaster Media -->
+                <section>
+                    <h2>WolfyMaster Media</h2>
+                    <div>
+                        <ul>
+                            <li>Started as a multimedia production business</li>
+                            <li>Upsold web development & e-commerce</li>
+                            <li>Found jobs:
+                                <ul>
+                                    <li>Craigslist</li>
+                                    <li>Referral</li>
+                                    <li>Agency Overflow</li>
+                                </ul>
+                            </li>
+                            <li>Networking is crucial</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- craigslist emails -->
+                <section>
+                    <img src="./images/craigslist1.png" alt="">
+                    <blockquote style="width:100%; font-size: 16px">"I came across your post for a remote WordPress +
+                        Front End Dev. I am interested in the opportunity.
+                        I am located in Western PA. Any additional details you could provide would be fantastic. For
+                        instance, how many hours/week would
+                        this be? I am looking to find something that could offer between 15-30 hours."</blockquote>
+                </section>
+
+                <section>
+                    <img src="./images/craigslist2.png" alt="">
+                </section>
+
+                <section>
+                    <img src="./images/craigslist3.png" alt="">
+                </section>
+
+                <!-- Always be learning -->
+                <section>
+                    <h2>Always be learning (80/20)</h2>
+                    <div>
+                        I looked for opportunities to try something new. As long as
+                        I was 80% certain I could fulfil the obligation, I was confident
+                        I could figure out the other 20%.
+                    </div>
+                </section>
+            </section>
+
+            <!-- Timeline -->
+            <section>
+                <h2>Timeline of Events</h2>
+                <img src="./images/timeline.png" alt="">
+                <div style="font-size:10px"><a href="./images/timeline.png" target="_blank">(Enhance)</a></div>
+            </section>
+
+            <!-- Contracting/Freelancing vs W2 -->
+            <section>
+                <h2>Contacting/Freelancing vs W2</h2>
+                <div style="display:flex; justify-content: space-between">
+                    <div>
+                        <h6>Contracting/Freelancing</h6>
+                        <ul>
+                            <li>Set your own rate</li>
+                            <li>Responsible for own taxes</li>
+                            <li>No benefits</li>
+                            <li>Responsible for finding work</li>
+                            <li>No limits on hrs/wk</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h6>W2 (employee)</h6>
+                        <ul>
+                            <li>Salaried</li>
+                            <li>Taxes deducted automatically</li>
+                            <li>Benefits (medical/dental/vision)</li>
+                            <li>At-will employment</li>
+                            <li>FTE ~ 40 hr/wk</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contracting/Freelancing -->
+            <section>
+                <section>
+                    <h2>Contracting/Freelancing</h2>
+                </section>
+
+                <section>
+                    <h2>Where to find work?</h2>
+                    <ul>
+                        <li>
+                            Freelance Marketplaces
+                            <ul>
+                                <li>Upwork</li>
+                                <li>Fiverr</li>
+                            </ul>
+                        </li>
+                        <li>Craigslist</li>
+                        <li>Friends/Family</li>
+                        <li>Local Businesses</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="./images/craigslist_screenshot.png" alt="" />
+                </section>
+
+                <section>
+                    <h2>If I were starting today...</h2>
+                    <ul>
+                        <li>JavaScript is huge (Nextjs)</li>
+                        <li>WordPress is still 43% of the internet
+                            <ul>
+                                <li>It's gone through some big changes lately too</li>
+                            </ul>
+                        </li>
+                        <li>Mobile is much more popular and easier to build</li>
+                        <li>Lots more people have sites and may just need maintenance
+                            <ul>
+                                <li>Start visiting local websites and if you can see an opportunity for improvement,
+                                    contact them.
+                                    Agencies do a bad job of following up with maintenance.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Platforms -->
+                <section>
+                    <h2>Platforms</h2>
+                    <div style="margin-bottom:20px;">Lots more options to take advantage of:</div>
+                    <div style="display:flex; justify-content: space-between">
+                        <div>
+                            <h6>Website/e-commerce</h6>
+                            <ul>
+                                <li>Shopify</li>
+                                <li>Squarespace</li>
+                                <li>WordPress</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>Hosting</h6>
+                            <ul>
+                                <li>Fly.io</li>
+                                <li>Github Pages</li>
+                                <li>Netlify.com</li>
+                                <li>Railway.app</li>
+                                <li>Vercel.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- W2 -->
+            <section>
+                <section>
+                    <h2>Employee (W2)</h2>
+                </section>
+
+                <!-- The Interview -->
+                <section>
+                    <h2>The Interview</h2>
+                    <div style="margin-bottom:20px;">Experience building and delivering software will greatly impact a
+                        traditional interview</div>
+                    <ul>
+                        <li>Articulate value & understand the business problems</li>
+                        <li>Experience & Examples (Show. Don't tell.)</li>
+                        <li>Leverage / Negotiation</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Minimum Viable Candidate -->
+            <section>
+                <h2>Minimum Viable Candidate</h2>
+                <div>A candidate that possesses the minimum level of skill or ability to be considered for hire.</div>
+            </section>
+
+            <!-- College vs Bootcamp vs Self-Taught -->
+            <section>
+                <section>
+                    <div style="display:flex;justify-content: space-between; flex: 1; gap: 10px">
+                        <div style="flex: 1">
+                            <h2>CS Degree</h2>
+                            <ul class="space">
+                                <li>Highly technical with a greater emphasis on theory and science</li>
+                                <li>Curriculum covers origins of computing through ~15 years ago</li>
+                                <li>Emphasis on data structures and algorithms</li>
+                                <li>Begins after HS graduation</li>
+                                <li>&gt;$50k</li>
+                            </ul>
+                        </div>
+
+                        <div style="flex: 1">
+                            <h2>Bootcamp</h2>
+                            <ul class="space">
+                                <li>Pure focus on MVC</li>
+                                <li>Curriculum is focused on the last couple years of trends and future of the field
+                                </li>
+                                <li>Provides "guide rails" and "paved road" on learning software development</li>
+                                <li>Not as much emphasis on data structures and algorithms</li>
+                                <li>Could start in a few months</li>
+                                <li>$10 - $20k</li>
+                            </ul>
+                        </div>
+
+                        <div style="flex: 1">
+                            <h2>Self-Taught</h2>
+                            <ul class="space">
+                                <li>Self-paced. Freedom to explore any topic of interest</li>
+                                <li>Make your own curriculum</li>
+                                <li>Can start today</li>
+                                <li>Free</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- The Pie -->
+                <section>
+                    <h2>The Pie</h2>
+                    <img src="./images/the_pie.png" alt="" />
+                </section>
+            </section>
+
+            <!-- Always be Learning - Dev Roadmap -->
+            <section>
+                <h2>Always Be Learning</h2>
+                <div>
+                    <a href="https://roadmap.sh/backend" target="_blank">Developer Roadmap</a>
+                </div>
+            </section>
+
+            <!-- Resources -->
+            <section>
+                <!-- Resources -->
+                <section>
+                    <h2>Available Resources</h2>
+                    <div style="display: flex">
+                        <ul>
+                            <li>Github Student Pack (assorted discounts)</li>
+                            <li>Digital Ocean (VPS for $5/month)</li>
+                            <li>Netlify (free tier)</li>
+                            <li>AWS (student credits)</li>
+                            <li>Google Cloud (student credits)</li>
+                        </ul>
+                        <ul>
+                            <li>Fly.io</li>
+                            <li>Github Pages</li>
+                            <li>Netlify.com</li>
+                            <li>Railway.app</li>
+                            <li>Vercel.com</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Advice -->
+                <section>
+                    <h2>Advice for ramping up</h2>
+                    <ul>
+                        <li>Build stuff!!</li>
+                        <li>Solve your own problems</li>
+                        <li>Read (books & actual code)</li>
+                        <li>YouTube Videos & Blog articles (dev.to)</li>
+                        <li>Reverse engineer stuff</li>
+                        <li>Solve other people's problems</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Questions -->
+            <section>
+                <div>Who has questions?</div>
+            </section>
+
+            <!-- END SLIDES -->
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            dependencies: [
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/sampler/sampler.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js' },
+                { src: 'plugin/copycode/copycode.js', async: true },
+                //{ src: 'plugin/runcode/runcode.js', async: true }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
