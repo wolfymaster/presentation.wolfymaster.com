@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ECTS Entrepreneur Presentation</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- plugin css -->
+    <link rel="stylesheet" href="plugin/copycode/copycode.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style type="text/css">
+        .space>li {
+            margin: 10px 0;
+        }
+
+        .tagline {
+            margin-top: -20px;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .fs24 {
+            font-size:24px;
+        }
+
+        .p20 {
+            padding: 20px 0;
+        }
+
+        .heading.invert {
+            background: #eee8d5;
+            color: #002b36;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Intro -->
+            <section>
+                <h1>Paul Sherer</h1>
+                <div style="display:flex; justify-content:space-around">
+                    <div>
+                        <img src="images/sightgain.png" width="250" style="border: none; background: black; padding: 10px" />
+                        <div style="font-size:22px">Engineering Director</div>
+                    </div>
+                </div>
+                <aside class="notes"></aside>
+            </section>
+
+
+            <section>
+                <h2>Artificial Intelligence</h2>
+                <div>Any technique that enables computers to mimic human intelligence, using logic, if-then rules, decision trees, and machine learning.</div>
+                <div>Initial development started ~ 1950s</div>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Machine Learning</h2>
+                    <div>
+                        A subset of AI that includes statistical techniques that enable machines to improve at tasks with experience. Ability to learn without being explicitly programmed. 
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Supervised Learning</h2>
+                    <div>Supervised Learning input is provided as a labelled dataset, a model can learn from it ot provide th result of the problem easily</div>
+                </section>
+
+                <section>
+                    <h2>Unsupervised Learning</h2>
+                    <div>No complete and clean labelled dataset. Self-organized learning. Main objective to explore the underlying patterns and predict the output.</div>
+                </section>
+
+                <section>
+                    <h2>Reinforcement Learning</h2>
+                    <div>Trains software to make decisions to achieve the most optimal results. It mimics the trial-and-error learning process that humans use to achieve their goals.</div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Deep Learning</h2>
+                    <div>
+                        The subset of Machine Learning composed of algorithms that permit software to train itself to perform tasks, like speech and image recognition, by exposing multilayered neural networks to vast amounts of data. Learning based on Deep Neural Network.
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3>Neural Network</h3>
+                <div>
+                    <img src="images/Neural-Networks-Architecture.png" />
+                </div>
+            </section>
+
+
+            <section>
+                <h2>Training models</h2>
+                <div>input → program → results</div>
+                <div>inputs & weights → model → results → loss (how good are results)</div>
+                <div>input -> modal -> results</div>
+            </section>
+
+
+            <section>
+                <section>
+                    <h2>Building 'intelligent' software</h2>
+                    <img src="images/maze.png" height="500px" />
+                </section>
+                
+                <section>
+                    <h3>Depth First Search</h3>
+                    <div>Go deep</div>
+                    <div>Uninformed</div>
+                </section>
+
+                <section>
+                    <h3>Breadth First Search</h3>
+                    <div>Go Wide</div>
+                    <div>Uninformed</div>
+                </section>
+
+                <section>
+                    <h3>A* Search</h3>
+                    <div>Expands node with loweest value of g(n) + h(n)</div>
+                    <div>g(n): Cost to reach node</div>
+                    <div>h(n): Estimated cost to goal</div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>What should 'o' do next?</h3>
+                    <img src="images/tictactoe.jpg" height="500px" />
+                </section>
+
+                <section>
+                    <h2>Adversarial Search</h2>
+                </section>
+
+                <section>
+                    <h2>Minimax</h2>
+                    <div>Recursive algorithm for choosing the next move in an n-player game, usually a two-player game</div>
+                    <div>
+                        <a href="https://www.neverstopbuilding.com/blog/minimax" target="_blank">Example</a>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h2>How can you be productive with ML today?</h2>
+            </section>
+
+            <section>
+                <h2>Tooling</h2>
+                <ul>
+                    <li>PyTorch:
+                        <ul>
+                            <li>Created by Facebook in 2016</li>
+                            <li>Tensorflow has been dying since 2018</li>
+                            <li>Majority of research projects have switched to using PyTorch, meaning that a lot of the newer algorithms used will be made available as part of that library.</li>
+                        </ul>
+                    </li>
+                    <li>FastAI
+                        <ul>
+                            <li>Built on top of PyTorch</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Build an image classifier</h2>
+                <img src="images/xkcd-bird.png" height="500px" />
+                <div style="font-size: 14px">
+                    <a href="https://www.kaggle.com/work/code" target="_blank">Notebook</a>
+                </div>
+            </section>
+
+            <!-- END SLIDES -->
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            dependencies: [
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/sampler/sampler.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js' },
+                { src: 'plugin/copycode/copycode.js', async: true },
+                //{ src: 'plugin/runcode/runcode.js', async: true }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
