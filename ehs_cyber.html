@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ECTS Entrepreneur Presentation</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- plugin css -->
+    <link rel="stylesheet" href="plugin/copycode/copycode.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style type="text/css">
+        .space>li {
+            margin: 10px 0;
+        }
+
+        .tagline {
+            margin-top: -20px;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .fs24 {
+            font-size: 24px;
+        }
+
+        .p20 {
+            padding: 20px 0;
+        }
+
+        .heading.invert {
+            background: #eee8d5;
+            color: #002b36;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!--
+    - Cyber Hygene
+    - Look-alike domains
+    - phishing attempts
+    - analyst roles
+    - usb rubber ducky attack
+    - red team vs blue team
+    - owasp top 10
+
+Mr Robot - Phished: https://www.youtube.com/watch?v=O5MvtqgLYeA
+DefCon Hacking: https://www.youtube.com/watch?v=fHhNWAKw0bY
+
+
+
+Slide 3:
+Topic: Importance of Cybersecurity
+Description: Discuss the significance of cybersecurity in today's digital world, emphasizing the risks and consequences of cyber threats.
+
+Slide 7:
+Topic: Social Engineering
+Description: Define social engineering and its techniques, such as phishing and pretexting. Discuss real-life examples and ways to recognize and prevent social engineering attacks.
+
+Slide 9:
+Topic: Secure Web Browsing
+Description: Discuss safe web browsing practices, including verifying website security (HTTPS), avoiding suspicious links, and being cautious with personal information online.
+
+Slide 10:
+Topic: Secure Mobile Usage
+Description: Highlight the importance of securing mobile devices through methods like passcodes, biometrics, app permissions, and keeping software up to date.
+
+Slide 11:
+Topic: Data Privacy
+Description: Explain the significance of protecting personal data, discussing concepts like data breaches, privacy settings, and responsible online behavior.
+
+Slide 13:
+Topic: Ethical Hacking
+Description: Introduce the concept of ethical hacking (penetration testing) and its role in identifying vulnerabilities to improve cybersecurity. Mention ethical hacking certifications and careers.
+
+Slide 16:
+Topic: Cybersecurity Best Practices
+Description: Summarize essential cybersecurity best practices, including regularly updating software, backing up data, being vigilant about phishing emails, and practicing good password hygiene.
+
+Slide 17:
+Topic: Case Study: NotPetya Ransomware
+Description: Present a real-life example of a significant cyber attack, such as the NotPetya ransomware attack. Discuss the impact and lessons learned.
+
+Slide 18:
+Topic: Online Safety Tips
+Description: Provide practical tips for staying safe online, such as being cautious with sharing personal information, avoiding public Wi-Fi, and using two-factor authentication.
+
+Slide 19:
+Topic: Reporting Cyber Incidents
+Description: Explain the importance of reporting cyber incidents and suspicious activities to appropriate authorities, such as school administrators, parents, or law enforcement.
+
+
+-->
+
+            <section>
+                <div>
+                    <img src="/images/qr_troll_phishing.png" />
+                </div>
+            </section>
+
+            <!-- Intro -->
+            <section>
+                <h1>Paul Sherer</h1>
+                <div style="display:flex; justify-content:space-around">
+                    <div>
+                        <div>SightGain</div>
+                        <div style="font-size:22px">Engineering Director</div>
+                    </div>
+                    <div>
+                        <div>Mandiant/Google</div>
+                        <div style="font-size:22px">CyberSecurity Instructor</div>
+                    </div>
+                </div>
+                <aside class="notes"></aside>
+            </section>
+
+            <!-- Goal -->
+            <section>
+                <h1>Objective</h1>
+                <h3>Introduce the field of CyberSecurity</h3>
+            </section>
+
+            <!-- Class Question -->
+            <section>
+                <h1>Question</h1>
+                <div>Who is interested in cybersecurity?</div>
+            </section>
+
+            <!-- What is cybersecurity? -->
+            <section>
+                <section>
+                    <div>What is cybersecurity?</div>
+                    <div class="fragment">
+                        <a href="https://www.youtube.com/watch?v=msX4oAXpvUE" target="_blank">Not This.</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Types of cyber threats</h3>
+                    <div class="fragment">Malware</div>
+                    <div class="fragment">Phishing</div>
+                    <div class="fragment">Social Engineering</div>
+                    <div class="fragment">OWASP Top 10</div>
+                </section>
+
+                <section>
+                    <h2>Malware</h2>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Ransomware:</strong> Disables victim's access to data until ransom
+                            is paid</li>
+                        <li class="fragment"><strong>Spyware:</strong> collects user activity data without their
+                            knowledge</li>
+                        <li class="fragment"><strong>Adware:</strong> Serves unwanted advertisements</li>
+                        <li class="fragment"><strong>Trojan:</strong> Disguises itself as desirable code</li>
+                        <li class="fragment"><strong>Rootkit:</strong> Grants hackers remote control of victim's device
+                        </li>
+                        <li class="fragment"><strong>Keylogger:</strong> Monitors user's keystrokes</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Phishing</h2>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Emails:</strong> Emails are designed to appear to come from a
+                            legitimate source</li>
+                        <li class="fragment"><strong>Spear Phishing:</strong> Targeted phishing email attack relies on
+                            data that a cyber criminal has previously collected about the victim or the victim's
+                            employer</li>
+                        <li class="fragment"><strong>Fake/Look-alike Websites:</strong> Malicious website leverages
+                            subtle changes to a known URL to trick users</li>
+                        <li class="fragment"><strong>"Evil Twin" Wi-Fi (MITM):</strong> Spoofing free/open Wi-Fi access
+                            points. Victims unknowingly log into the wrong hotspot</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Social Engineering</h2>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Pretexting:</strong> Process of lying to gain access to personal
+                            data or other privileged information</li>
+                        <li class="fragment"><strong>Tailgating:</strong> Attacker follows a person into a secure area.
+                            This type of attack relies on the person being followed assuming the intruder is authorized
+                            to access the targeted area.</li>
+                        <li class="fragment"><strong>Quid Pro Quo:</strong> Exploits the human tendency to reciprocate
+                            good gestures.</li>
+                        <li class="fragment"><strong>Baiting:</strong> Attacker leaves a physical device (like a USB)
+                            infected with a type of malware where it's most likely to be found. When a victim inserts
+                            the USB into their computer, a malware installation process is initiated.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>OWASP Top 10</h2>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Broken Access Control:</strong> Access control enforces policy such
+                            that users cannot act outside of their intended permissions</li>
+                        <li class="fragment"><strong>Cryptographic Failures:</strong> Data permisisons in transit and at
+                            rest. GDPR, PCI. Is any data transmitted in clear text? Old or weak cryptographic algorithms
+                        </li>
+                        <li class="fragment"><strong>Injection:</strong> User-supplied data is not validated, filtered
+                            or sanitized by the application. SQL Injection</li>
+                        <li class="fragment"><strong>Insecure Design:</strong> Risks related to design and architectural
+                            flaws. Incorrect threat modeling or missing security controls</li>
+                        <li class="fragment"><strong>Security Misconfiguration:</strong> Application missing security
+                            harding. Unneccesssary features are enabled or installed (ports, services, accounts,
+                            privileges). Default accounts and passwords still enabled and unchanged. Error handling
+                            reveals stack traces or other overly informative error messages to users</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>OWASP Top 10</h2>
+                    <ul class="space fs24">
+                        <li class="fragment"><strong>Vulnerable and Outdated Components:</strong> Unknown versions of
+                            components. Unsupported or out of date software. Not upgrading applications or dependecies
+                            in a timely fashion.</li>
+                        <li class="fragment"><strong>Identification and Authentication Failures:</strong> Application
+                            permits brute force, weak or well-known passwords, weakly hashed passwords, missing
+                            multi-factor authentication</li>
+                        <li class="fragment"><strong>Software and Data Integrity Failures:</strong> Application relies
+                            on plugins, libraries, or modules from untrusted sources. Supply chain attacks</li>
+                        <li class="fragment"><strong>Security Logging and Monitoring Failures:</strong> Without logging
+                            breaches cannot be detected. Auditable events should be logged and actively monitored for
+                            suspicous activity</li>
+                        <li class="fragment"><strong>Service-Side Request Forgery:</strong> Application fetches remote
+                            resource without validating the user-supplied URL.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Field of cybersecurity -->
+            <section>
+                <section>
+                    <img src="images/cyber/cyberlayers.bmp" width="100%" />
+                </section>
+                <section>
+                    <img src="images/cyber/cyberlayers2.bmp" width="100%" />
+                </section>
+                <section>
+                    <img src="images/cyber/redblueteam.bmp" width="100%" />
+                </section>
+                <section>
+                    <img src="images/cyber/domains.bmp" width="100%" />
+                </section>
+                <section>
+                    <h2>Roles</h2>
+                    <ul>
+                        <li>Cybersecurity Analyst (SOC Analyst)</li>
+                        <li>Application Security Engineer (AppSec)</li>
+                        <li>Network Security Engineer</li>
+                        <li>Security Researcher</li>
+                        <li>Pentester</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Cyber Hygiene -->
+            <section>
+                <section>
+                    <div class="left">
+                        <h2>Good Cyber Hygiene</h2>
+                        <div class="fs24 tagline" style="font-style:italic;">
+                            (what you can do now)
+                        </div>
+                    </div>
+
+                    <div class="fragment left p20">
+                        <h4 class="heading invert">Update Software Regularly</h4>
+                        <div class="fs24">
+                            Update apps, web browers, ect regularly to ensure you are using the latest versions. Delete
+                            apps you no longer use and only download apps from reputable or offical sources.
+                        </div>
+                    </div>
+
+                    <div class="fragment left p20">
+                        <div style="display: flex; gap: 10px; align-content: center; justify-content: center;">
+                            <div>
+                                <h4 class="heading invert">Responsible Password Management</h4>
+                                <div class="fs24">
+                                    Use passwords with a minimum of 12 characters and containing uppercase, lowercase,
+                                    numbers and symbols. Better yet, use a password manager and 24 character passwords!
+                                </div>
+                            </div>
+                            <div>
+                                <a href="images/cyber/password-cracking-2023.jpeg" target="_blank">
+                                    <img src="images/cyber/password-cracking-2023.jpeg" width="100%"
+                                        style="margin:0;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="left p20">
+                        <h4 class="heading invert">Use multi-factor authentication (MFA)</h4>
+                        <div class="fs24">
+                            Factors include: (i) something you know (e.g., password/personal identification number
+                            [PIN]); (ii) something you have (e.g., cryptographic identification device, token); or (iii)
+                            something you are (e.g., biometric).
+                            Authentication using two or more different factors to achieve authentication.
+                        </div>
+                    </div>
+
+                    <div class="fragment left p20">
+                        <h4 class="heading invert">Back up regularly (3-2-1 rule)</h4>
+                        <div class="fs24">
+                            Ensure you have regular, automated backups. You should have <strong>3</strong> copies of
+                            your data on <strong>2</strong> different media with <strong>1</strong> copy off-site for
+                            disaster recovery.
+                        </div>
+                    </div>
+                    <div class="fragment left p20">
+                        <h4 class="heading invert">Privacy</h4>
+                        <div class="fs24">
+                            Avoid quizzes, games, or surveys on social media that ask for sensitive information. Don't
+                            post private information publicly on social media.
+                            Be cautious about the permissions you accept for the apps you use. Use a VPN when connecting
+                            to public Wi-Fi. <strong>Always</strong> use https.
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="left p20">
+                        <h4 class="heading invert">Watch out for social engineering attacks</h4>
+                        <div class="fs24">
+                            Avoid clicking on suspicious links. Avoid downloading suspicious attachments or files.
+                            Never disclose security codes over the phone. Hang up and call back if you receive a
+                            suspicious call.
+                        </div>
+                        <div class="p20" style="text-align: center;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fHhNWAKw0bY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Resources-->
+            <section>
+                <h2>Resources</h2>
+                <ul style="columns: 2; --webkit-columns: 2; --moz-columns: 2; gap:100px">
+                    <li>@hak5</li>
+                    <li>@LiveOverflow</li>
+                    <li>@_JohnHammond</li>
+                    <li>@NetworkChuck</li>
+                    <li>hackthebox.com</li>
+                    <li>hackthissite.org</li>
+                    <li>tryhackme.com</li>
+                    <li>www.kali.org</li>
+                    <li>www.sans.org</li>
+                    <li>www.cybrary.it</li>
+                    <li>pwn.college</li>
+                </ul>
+            </section>
+
+            <!-- Questions -->
+            <section>
+                <div>Who has questions?</div>
+            </section>
+
+            <section>
+                <h1>Demo</h1>
+                <div>Phishing</div>
+            </section>
+
+
+            <!-- Slide 3: How is Phishing Done? -->
+            <section>
+                <h2>How is Phishing Done?</h2>
+                <p>Phishing is typically performed using:</p>
+                <ul>
+                    <li><strong>Email Spoofing:</strong> Fake emails designed to look like legitimate ones.</li>
+                    <li><strong>Fake Websites:</strong> Websites that mimic trusted services.</li>
+                    <li><strong>Malicious Links:</strong> Links leading to credential-stealing forms.</li>
+                    <li><strong>Attachments:</strong> Files that install malware or steal data.</li>
+                </ul>
+            </section>
+
+
+            <!-- Slide 5: Example 1: Phishing Email -->
+            <section>
+                <h2>Example 1: Phishing Email</h2>
+                <p>A common phishing email might look like this:</p>
+                <blockquote>
+                    "Your account has been compromised. Click here to verify your login credentials immediately."
+                </blockquote>
+                <p><strong>Red Flags:</strong></p>
+                <ul>
+                    <li>Urgent or threatening language</li>
+                    <li>Unfamiliar sender address</li>
+                    <li>Suspicious links or attachments</li>
+                </ul>
+            </section>
+
+            <!-- Slide 6: Example 2: Fake Website -->
+            <section>
+                <h2>Example 2: Fake Website</h2>
+                <p>Phishing sites mimic real ones. For example:</p>
+                <p><strong>Fake Link:</strong> <code>https://bank-secure-login.com</code> (looks real but isn't).</p>
+                <p><strong>Real Link:</strong> <code>https://www.yourbank.com</code></p>
+            </section>
+
+            <!-- Slide 7: Tips to Identify Phishing -->
+            <section>
+                <h2>Tips to Identify Phishing</h2>
+                <ul>
+                    <li>Verify sender email addresses.</li>
+                    <li>Check URLs carefully (hover before clicking).</li>
+                    <li>Look for spelling and grammar errors.</li>
+                    <li>Be wary of urgent requests for personal information.</li>
+                    <li>Don't download unexpected attachments.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 8: Preventing Phishing -->
+            <section>
+                <h2>Preventing Phishing Attacks</h2>
+                <ul>
+                    <li>Use strong, unique passwords for accounts.</li>
+                    <li>Enable two-factor authentication (2FA).</li>
+                    <li>Install and update antivirus software.</li>
+                    <li>Regularly train employees or individuals on phishing awareness.</li>
+                    <li>Report suspicious emails to IT or security teams.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 9: What to Do if You Get Phished -->
+            <section>
+                <h2>What to Do if You Get Phished</h2>
+                <ul>
+                    <li>Immediately change your compromised passwords.</li>
+                    <li>Notify your bank or credit card provider.</li>
+                    <li>Report the phishing attempt to relevant authorities.</li>
+                    <li>Scan your device for malware.</li>
+                    <li>Monitor your accounts for unusual activity.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The Impact of Phishing</h2>
+                <ul>
+                    <li><strong>Global Statistics:</strong></li>
+                    <ul>
+                        <li>Phishing accounts for <strong>90%</strong> of all data breaches.</li>
+                        <li>Over <strong>$57 million</strong> was lost to phishing scams in 2022 (U.S.).</li>
+                    </ul>
+                    <li><strong>Impact on Individuals and Organizations:</strong></li>
+                    <ul>
+                        <li>Financial Loss</li>
+                        <li>Identity Theft</li>
+                        <li>Reputation Damage</li>
+                        <li>Operational Downtime</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Advanced Phishing Techniques</h2>
+                <ul>
+                    <li><strong>Clone Phishing:</strong> Duplicating legitimate emails with malicious links.</li>
+                    <li><strong>Man-in-the-Middle (MITM):</strong> Intercepting communications to steal credentials.
+                    </li>
+                    <li><strong>AI-Generated Phishing:</strong> Error-free, highly convincing emails using AI.</li>
+                    <li><strong>QR Code Phishing (Quishing):</strong> Malicious QR codes tricking users into scanning
+                        links.</li>
+                </ul>
+            </section>
+
+            <!-- Slide 10: Conclusion -->
+            <section>
+                <h2>Conclusion</h2>
+                <p>Phishing is one of the most common and dangerous cyber threats today.</p>
+                <p>By staying vigilant, verifying sources, and following best practices, you can protect yourself and
+                    your organization from phishing attacks.</p>
+                <h3>Stay Safe. Stay Aware.</h3>
+            </section>
+
+            <!-- END SLIDES -->
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            dependencies: [
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/sampler/sampler.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js' },
+                { src: 'plugin/copycode/copycode.js', async: true },
+                //{ src: 'plugin/runcode/runcode.js', async: true }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
