@@ -2,7 +2,7 @@
 
 # aws s3 sync ./ s3://presentation.wolfymaster.com --exclude '.git/*' --exclude '.idea/*'
 
-EXCLUDE_FILE="./excludes"
+EXCLUDE_FILE="$PWD/scripts/excludes"
 
 # Start building the command with the base
 COMMAND="aws s3 sync ./ s3://presentation.wolfymaster.com"
