@@ -1,9 +1,10 @@
-.github
 .git/*
+.github/*
 .idea/*
+scripts/*
+test/*
 .gitignore
 .travis.yml
-test/*
 bower.json
 CONTRIBUTING.md
 Gruntfile.json
