@@ -1,0 +1,12 @@
+.github
+.git/*
+.idea/*
+.gitignore
+.travis.yml
+test/*
+bower.json
+CONTRIBUTING.md
+Gruntfile.json
+LICENSE
+package.json
+README.md
