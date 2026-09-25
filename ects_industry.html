@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ECTS - State of the Industry</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- plugin css -->
+    <link rel="stylesheet" href="plugin/copycode/copycode.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style type="text/css">
+        .space>li {
+            margin: 10px 0;
+        }
+
+        .tagline {
+            margin-top: -20px;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .fs24 {
+            font-size: 24px;
+        }
+
+        .p20 {
+            padding: 20px 0;
+        }
+
+        .heading.invert {
+            background: #eee8d5;
+            color: #002b36;
+            padding: 10px;
+        }
+
+        .dim {
+            color: #93a1a1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title -->
+            <section>
+                <h1>State of the Industry</h1>
+                <h3 class="dim">what actually gets you hired</h3>
+                <div class="p20">
+                    Paul Sherer
+                    <div><small>@wolfymaster</small></div>
+                </div>
+                <div class="dim fs24">Erie County Technical School &mdash; Sept 28, 2026</div>
+                <aside class="notes">
+                    <ul>
+                        <li>Thanks for having me back. Today isn't a coding lesson.</li>
+                        <li>Today is the honest version: what the software industry actually looks like right now, and what separates the people who get hired from the people who don't.</li>
+                        <li>I've been doing this ~20 years, I've hired developers, and I still build software every week.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Who am I</h2>
+                <ul class="space">
+                    <li>Software engineer, ~20 years</li>
+                    <li>Engineering director, startup founder, consultant</li>
+                    <li>Built software real companies run on</li>
+                    <li class="fragment">Now I also substitute teach &mdash; that's how I end up in rooms like this</li>
+                    <li class="fragment">And yes, I've hired developers. I know what the resume pile looks like.</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>I've sat on both sides of the interview table.</li>
+                        <li>Everything today comes from that: what I wish someone told me at 17, and what I look for when hiring.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Roadmap</h2>
+                <ol class="space">
+                    <li>Part 1 &mdash; the industry right now (honest version)</li>
+                    <li>Part 2 &mdash; what actually gets you hired entry-level</li>
+                    <li>Part 3 &mdash; your questions, then student interviews</li>
+                </ol>
+                <aside class="notes">
+                    About 90 minutes of me talking, then we flip it and I interview some of you.
+                </aside>
+            </section>
+
+            <!-- PART 1 -->
+            <section>
+                <h1 class="heading invert">Part 1: The Industry, Honestly</h1>
+            </section>
+
+            <section>
+                <h2>Software ate the world...</h2>
+                <p class="fragment">...and then AI showed up.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Every company is a software company now &mdash; banks, farms, hospitals, your school.</li>
+                        <li>And as of the last couple years, AI coding tools are standard equipment. Every professional developer I know uses them daily.</li>
+                        <li>This room needs to understand what that changed and what it didn't.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>What AI changed</h2>
+                <p>The easy code is free now.</p>
+                <ul class="space">
+                    <li class="fragment">Boilerplate, CRUD apps, simple scripts &mdash; seconds, not hours</li>
+                    <li class="fragment">"Write me a function that..." is a solved problem</li>
+                    <li class="fragment">Typing speed is no longer a skill that matters</li>
+                </ul>
+                <aside class="notes">
+                    If your entire skill set is "I can write a for loop," that skill just got commoditized. That's the bad news. The good news is next.
+                </aside>
+            </section>
+
+            <section>
+                <h2>What AI didn't change</h2>
+                <ul class="space">
+                    <li class="fragment">Someone has to decide <strong>what</strong> to build</li>
+                    <li class="fragment">Someone has to verify it's <strong>correct</strong></li>
+                    <li class="fragment">Someone has to debug it when it's wrong at 2am</li>
+                    <li class="fragment">Someone <strong>owns</strong> it in production</li>
+                </ul>
+                <p class="fragment" style="margin-top:30px;">Judgment is the job now.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>AI is confident and wrong on a regular basis. It hallucinates APIs that don't exist.</li>
+                        <li>The valuable person is the one who can look at AI output and say "this is right" or "this is subtly broken and here's why."</li>
+                        <li>That takes real understanding. There's no shortcut around it.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>The bar moved</h2>
+                <div class="left" style="max-width:800px; margin:0 auto;">
+                    <p><span class="dim">2015:</span> "can you write code?"</p>
+                    <p class="fragment"><span class="dim">2026:</span> "can you take a vague problem, ship something that works, <strong>and prove it works?</strong>"</p>
+                </div>
+                <aside class="notes">
+                    Employers stopped testing whether you can write syntax. They test whether you can solve problems and stand behind the result. Tests, demos, explaining your reasoning &mdash; that's the interview now.
+                </aside>
+            </section>
+
+            <section>
+                <h2>The junior market, honestly</h2>
+                <ul class="space">
+                    <li>More competitive than 5 years ago &mdash; I'm not going to lie to you</li>
+                    <li class="fragment">You're not competing against seniors</li>
+                    <li class="fragment">You're competing against other juniors...</li>
+                    <li class="fragment">...and the ones using AI well have real leverage</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Two years ago companies hired anyone who could fog a mirror and write JavaScript. That window closed.</li>
+                        <li>But: the juniors who stand out now stand out MORE, because the average applicant is weaker &mdash; lots of people with tutorial certificates and no real projects.</li>
+                        <li>Everything in part 2 is about being the applicant who stands out.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Where the demand actually is</h2>
+                <ul class="space">
+                    <li>Cybersecurity &mdash; always hiring, always will be</li>
+                    <li>AI/ML-adjacent roles &mdash; data pipelines, evals, integration</li>
+                    <li>Cloud &amp; infrastructure</li>
+                    <li>Data &mdash; every company is drowning in it</li>
+                    <li class="fragment"><strong>Boring business software.</strong> The unsexy stuff pays extremely well and nobody talks about it.</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Everyone wants to build the next social app. Nobody wants to build the invoicing system for a plumbing company.</li>
+                        <li>The plumbing company's invoicing system pays $120k and the founder will love you forever.</li>
+                        <li>Follow the money, not the hype.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Remote work</h2>
+                <p>Real. But:</p>
+                <ul class="space">
+                    <li class="fragment">Juniors get hired in-person / hybrid far more often</li>
+                    <li class="fragment">Your first job is probably local. That's fine.</li>
+                    <li class="fragment">Remote is something you earn with a track record</li>
+                </ul>
+                <aside class="notes">
+                    I work remotely now. My first jobs were in offices. Nobody hires a junior they've never met to work unsupervised &mdash; and honestly, you learn 10x faster sitting near experienced people.
+                </aside>
+            </section>
+
+            <!-- MYTHS -->
+            <section>
+                <h1 class="heading invert">Myths</h1>
+            </section>
+
+            <section>
+                <h2>Myth: "AI will take all the programming jobs"</h2>
+                <p class="fragment">It took the <strong>typing</strong>, not the <strong>thinking</strong>.</p>
+                <p class="fragment dim" style="margin-top:20px;">Compilers, open source, cloud &mdash; every wave made developers <em>more</em> valuable, not less.</p>
+                <aside class="notes">
+                    When compilers arrived, people said assembly programmers were done. Instead, software ate everything and we needed 100x more developers. AI raises the floor &mdash; more people can build software, which means more software gets built, which means more developers needed to own it.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Myth: "You need a CS degree"</h2>
+                <ul class="space">
+                    <li class="fragment">Helps for some doors. Opens zero doors by itself.</li>
+                    <li class="fragment">Portfolio + proof of work opens the rest.</li>
+                    <li class="fragment">When I hire, I look at what you <strong>built</strong> first.</li>
+                </ul>
+                <aside class="notes">
+                    A degree is a signal. "Here's a thing I built that real people use" is a louder signal. This room is at a technical school &mdash; you are already building the portfolio. Take that seriously.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Myth: "You need to be a math genius"</h2>
+                <p class="fragment">You need <strong>logical thinking</strong>.</p>
+                <p class="fragment dim" style="margin-top:20px;">Most dev jobs: arithmetic + logic + breaking big problems into small ones.</p>
+                <aside class="notes">
+                    Unless you're doing graphics, ML research, or crypto, you will not touch calculus. What you need is the ability to hold a system in your head and reason about what happens when X changes. That's trainable.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Myth: "Learn every language"</h2>
+                <p class="fragment">Learn <strong>one</strong> deeply.</p>
+                <p class="fragment dim" style="margin-top:20px;">Languages are tools. Learn to think &mdash; the rest transfers in weeks.</p>
+                <aside class="notes">
+                    I've written professionally in a dozen languages. The second one took a month, the third took two weeks. The hard part was learning the first one properly: data structures, control flow, how to structure a program. Pick Python or JavaScript and go deep.
+                </aside>
+            </section>
+
+            <!-- PART 2 -->
+            <section>
+                <h1 class="heading invert">Part 2: What Gets You Hired</h1>
+            </section>
+
+            <section>
+                <h2>Git + GitHub</h2>
+                <p>Non-negotiable.</p>
+                <ul class="space">
+                    <li class="fragment">Your GitHub <strong>is</strong> your resume</li>
+                    <li class="fragment">Commit history proves you actually build things</li>
+                    <li class="fragment">Learn branching, pull requests, merge conflicts &mdash; this is how teams work</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>First thing I do with an applicant: open their GitHub. Empty profile with a resume claiming "passionate developer"? Next.</li>
+                        <li>Green squares aren't the point &mdash; real projects with real commits are.</li>
+                        <li>If you take one thing from today: push code every week.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>One language, deeply</h2>
+                <p>Python <span class="dim">or</span> JavaScript / TypeScript</p>
+                <p class="fragment dim" style="margin-top:20px;">Build real things. Not tutorials. Things you actually use.</p>
+                <aside class="notes">
+                    Tutorial hell is real: you follow along, it works, you learned nothing. The learning happens when the tutorial ends and something breaks and nobody tells you why. Build a thing for yourself &mdash; a Discord bot, a budget tracker, a site for a club. Finish it. That's the whole game.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Linux command line</h2>
+                <p class="fs24 dim">cd &nbsp; ls &nbsp; grep &nbsp; ssh &nbsp; git from the terminal</p>
+                <ul class="space">
+                    <li class="fragment">Servers run Linux. All of them.</li>
+                    <li class="fragment">This alone puts you ahead of half the applicants</li>
+                </ul>
+                <aside class="notes">
+                    Most juniors have never SSH'd into anything. If you can navigate a Linux box, read logs, and restart a service, you are already useful on day one. It's a weekend of practice and it pays off forever.
+                </aside>
+            </section>
+
+            <section>
+                <h2>How the web actually works</h2>
+                <ul class="space">
+                    <li>HTTP &mdash; requests, responses, status codes</li>
+                    <li class="fragment">APIs &mdash; everything talks to everything via APIs now</li>
+                    <li class="fragment">JSON &mdash; the language data speaks</li>
+                </ul>
+                <aside class="notes">
+                    You don't need to memorize RFCs. But you should be able to explain what happens when you hit enter in a URL bar, and you should be comfortable calling an API and handling what comes back. That's 80% of modern development.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Basic SQL</h2>
+                <p class="fragment">Data lives in databases.</p>
+                <p class="fragment dim" style="margin-top:20px;">SELECT, JOIN, WHERE &mdash; a weekend of practice.</p>
+                <aside class="notes">
+                    Every app you've ever used is a pretty face on a database. If you can write a JOIN without googling it, you're ahead of most bootcamp grads. SQLite is free and runs everywhere &mdash; no excuses.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Debugging</h2>
+                <p>The #1 underrated skill.</p>
+                <ul class="space">
+                    <li class="fragment">Read the error message. <strong>All</strong> of it.</li>
+                    <li class="fragment">Bisect the problem &mdash; cut it in half until it's small</li>
+                    <li class="fragment">Explain it out loud (rubber duck works)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Senior devs aren't people who don't get errors. They're people who've seen 10,000 errors and have a system for the 10,001st.</li>
+                        <li>The error message usually tells you exactly what's wrong. Juniors ignore it and guess. Don't guess &mdash; read.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Using AI without getting dumb</h2>
+                <ul class="space">
+                    <li class="fragment">AI is a calculator for code &mdash; powerful, and wrong sometimes</li>
+                    <li class="fragment"><strong>Verify everything.</strong> Run it. Test it. Read it.</li>
+                    <li class="fragment">Never ship what you can't explain</li>
+                    <li class="fragment">If you can't explain it, you didn't learn it</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The juniors who thrive with AI use it to go faster at things they understand. The ones who drown paste output they can't read and get stuck the moment it breaks.</li>
+                        <li>Rule: if you couldn't write it yourself given enough time, don't ship the AI's version until you understand every line.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Writing</h2>
+                <p class="fragment">Docs. Commit messages. Emails. Questions.</p>
+                <p class="fragment dim" style="margin-top:20px;">The devs who write clearly get promoted faster. Every time.</p>
+                <aside class="notes">
+                    Software is a team sport and teams run on writing. A clear commit message, a good bug report, a design doc people can actually follow &mdash; this is what separates mid-level from senior more than any technical skill. And it matters in interviews too: explain your thinking out loud, in order.
+                </aside>
+            </section>
+
+            <section>
+                <h2>The boring ones that matter</h2>
+                <ul class="space">
+                    <li>Show up. On time. Every time.</li>
+                    <li class="fragment">Communicate &mdash; "I'm stuck" early beats "I'm stuck" late</li>
+                    <li class="fragment">Take feedback without ego</li>
+                    <li class="fragment">Do what you said you'd do</li>
+                </ul>
+                <aside class="notes">
+                    I have hired for attitude over skill more than once. Skills can be taught in months; reliability can't. The number of juniors who flake, go silent, or argue with feedback is staggering. Just... don't be that person and you're top 20%.
+                </aside>
+            </section>
+
+            <!-- PLAYBOOK -->
+            <section>
+                <h1 class="heading invert">The Playbook</h1>
+                <p class="dim">if I were 17 today</p>
+            </section>
+
+            <section>
+                <h2>1. Build 3 real projects</h2>
+                <p class="fragment dim">Not tutorials. Things you actually use.</p>
+                <p class="fragment dim">GitHub repos with READMEs that explain what and why.</p>
+                <aside class="notes">
+                    Three finished projects beats thirty half-finished tutorials. "Finished" means: it works, there's a README, and someone other than you has used it. A README that explains the problem and your decisions is worth more than the code.
+                </aside>
+            </section>
+
+            <section>
+                <h2>2. Contribute to open source</h2>
+                <p class="fragment dim">Even docs fixes count.</p>
+                <p class="fragment dim">Proves you can work in a real codebase with real people.</p>
+                <aside class="notes">
+                    Find a project you use, look at issues labeled "good first issue." Your first PR will be terrifying and your tenth will be routine. Hiring managers light up when they see real merged PRs &mdash; it means someone else already vetted you.
+                </aside>
+            </section>
+
+            <section>
+                <h2>3. Learn in public</h2>
+                <p class="fragment dim">Write about what you build. Notes, blog, videos &mdash; pick one.</p>
+                <p class="fragment dim">Hiring managers google you. Give them something to find.</p>
+                <aside class="notes">
+                    You don't need an audience. Writing forces you to actually understand something &mdash; and a year of "here's what I built this month" is the strongest junior portfolio I've ever seen. It also proves the writing skill from earlier.
+                </aside>
+            </section>
+
+            <section>
+                <h2>4. Get paid experience anywhere</h2>
+                <ul class="space">
+                    <li>Internship</li>
+                    <li class="fragment">School IT help</li>
+                    <li class="fragment">Freelance for a local business</li>
+                </ul>
+                <p class="fragment" style="margin-top:20px;">"I shipped X for a real user" beats everything.</p>
+                <aside class="notes">
+                    Doesn't have to be a tech company. The kid who built the scheduling spreadsheet-app for their uncle's shop has a better story than the kid with a 4.0 and no projects. Real users, real constraints, real deadlines.
+                </aside>
+            </section>
+
+            <!-- INTERVIEW -->
+            <section>
+                <h1 class="heading invert">About the interviews</h1>
+            </section>
+
+            <section>
+                <h2>What I'm listening for</h2>
+                <ul class="space">
+                    <li>How you <strong>think out loud</strong></li>
+                    <li class="fragment">"I don't know, but here's how I'd find out" &mdash; great answer</li>
+                    <li class="fragment">The questions <strong>you</strong> ask me</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>I'm not testing trivia. I'm testing: can this person reason through something unfamiliar without freezing?</li>
+                        <li>"I don't know" is fine. "I don't know and I have no plan" is not.</li>
+                        <li>Ask me questions at the end. "What's the hardest bug you ever fixed?" tells me you're curious. Curiosity is the whole job.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h1>Questions?</h1>
+                <div>
+                    <p>wolfy@wolfymaster.com | @wolfymaster</p>
+                </div>
+                <aside class="notes">
+                    Then we flip to interviews. Who's first?
+                </aside>
+            </section>
+
+            <!-- END SLIDES -->
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            dependencies: [
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/sampler/sampler.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js' },
+                { src: 'plugin/copycode/copycode.js', async: true },
+                //{ src: 'plugin/runcode/runcode.js', async: true }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
