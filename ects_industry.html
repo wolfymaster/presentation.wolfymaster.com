@@ -354,6 +354,24 @@
             </section>
 
             <section>
+                <h2>AI isn't free &mdash; and it isn't always there</h2>
+                <ul class="space">
+                    <li>Uber burned its entire 2026 AI budget in 4 months &mdash; then capped engineers at <strong>$1,500/month per tool</strong> (Bloomberg)</li>
+                    <li>Across 2,444 companies, every $1 of AI token spend produced about <strong>$0.18</strong> of realized value (Entelligence.AI)</li>
+                    <li>GitHub's August 2026 outage knocked Copilot offline for nearly <strong>8 hours</strong></li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">The meter is always running. Budget your tokens like you budget your servers.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Uber rolled out Claude Code in Dec 2025; by April engineers had consumed the full-year budget, at $500&ndash;$2,000 per engineer per month. The CTO's own demo burned ~$1,200 in tokens in two hours.</li>
+                        <li>Entelligence.AI (via TokenPost): the other $0.82 went to fixing AI-generated bugs ($0.44), rework ($0.27), and review ($0.11). Effort shifted, not removed.</li>
+                        <li>GitHub, Aug 17 2026: a misconfigured Istio policy blocked autoscaling and cascaded across Actions, PRs, APIs, and Copilot. If your workflow lives in the cloud, it stops when the cloud stops.</li>
+                        <li>Sources: https://www.inc.com/lucia-auerbach/uber-blew-through-2026-ai-budget-in-four-months-now-it-is-capping-employee-use/91355199 &mdash; https://tokenpost.com/news/insights/20922 &mdash; https://www.webpronews.com/githubs-8-hour-outage-caused-by-misconfigured-istio-policy-in-2026/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
                 <h2>Is AI taking engineering jobs?</h2>
                 <p>One study: employment for 22&ndash;25-year-olds in AI-exposed roles fell about <strong>16%</strong> vs. the pre-pandemic trend.</p>
                 <ul class="space">
@@ -715,6 +733,23 @@
                     <ul>
                         <li>The juniors who thrive with AI use it to go faster at things they understand. The ones who drown paste output they can't read and get stuck the moment it breaks.</li>
                         <li>Rule: if you couldn't write it yourself given enough time, don't ship the AI's version until you understand every line.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Three rules from people who do this all day</h2>
+                <ul class="space">
+                    <li><strong>Proof, not promises.</strong> &ldquo;No PR goes up without either new tests or a demo of the change working.&rdquo; &mdash; Addy Osmani</li>
+                    <li><strong>Keep it small.</strong> Small diffs are easier for the AI to get right and for you to review. Never commit code you can't explain.</li>
+                    <li><strong>Willison's golden rule:</strong> &ldquo;I won't commit any code to my repository if I couldn't explain exactly what it does.&rdquo;</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">The engineers getting the most out of AI have the strongest fundamentals. That's not a coincidence.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Osmani: treat AI-generated code as a helpful draft that must be verified. AI is the first-pass reviewer &mdash; spellcheck, not the editor. Human review focuses on what AI misses: security holes, duplicated code, maintainability.</li>
+                        <li>Willison's anti-pattern: filing PRs with hundreds of unreviewed agent-generated lines. "They could have prompted an agent themselves. What value are you even providing?"</li>
+                        <li>Sources: https://addyosmani.com/blog/code-review-ai/ &mdash; https://addyo.substack.com/p/code-review-in-the-age-of-ai &mdash; https://github.com/atifkhan-mindbridge/learning-vibecoding/blob/HEAD/01-understanding-ai-assisted-coding.md</li>
                     </ul>
                 </aside>
             </section>
