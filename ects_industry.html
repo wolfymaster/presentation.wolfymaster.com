@@ -1,0 +1,870 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ECTS - State of the Industry</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- plugin css -->
+    <link rel="stylesheet" href="plugin/copycode/copycode.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        let link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!-- WolfyMaster brand: https://www.wolfymaster.com/brand -->
+    <style type="text/css">
+        /* brand palette: coral #EC6758, purple #9146FF, light #F0F0FF, black #000000 */
+        body,
+        .reveal {
+            background: #000000;
+        }
+        .reveal {
+            color: #F0F0FF;
+            font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4 {
+            color: #EC6758;
+            font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .reveal code,
+        .reveal pre code {
+            font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+        .reveal a {
+            color: #9146FF;
+        }
+        .reveal .controls {
+            color: #9146FF;
+        }
+        .reveal .progress span {
+            background: #EC6758;
+        }
+        .reveal blockquote {
+            background: rgba(145, 70, 255, 0.12);
+            border-left: 4px solid #9146FF;
+            box-shadow: none;
+            padding: 12px 18px;
+            margin: 12px auto;
+            max-width: 90%;
+            font-size: 0.68em;
+            line-height: 1.4;
+        }
+        .reveal blockquote .src {
+            font-size: 0.8em;
+            margin-top: 6px;
+        }
+        .excerpt-slide ul {
+            font-size: 0.82em;
+        }
+        .excerpt-slide .space>li {
+            margin: 6px 0;
+        }
+        .brandlogo {
+            font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: #EC6758;
+        }
+        .brandlogo span {
+            color: #F0F0FF;
+        }
+        .space>li {
+            margin: 10px 0;
+        }
+
+        .tagline {
+            margin-top: -20px;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .fs24 {
+            font-size: 24px;
+        }
+
+        .p20 {
+            padding: 20px 0;
+        }
+
+        .heading.invert {
+            background: #EC6758;
+            color: #000000;
+            padding: 10px;
+        }
+
+        .dim {
+            color: #93a1a1;
+        }
+
+        .accent {
+            color: #9146FF;
+        }
+
+        .src {
+            font-size: 18px;
+            color: #93a1a1;
+            margin-top: 12px;
+        }
+
+        .excerpt {
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Title -->
+            <section>
+                <div class="brandlogo">Wolfy<span>Master</span></div>
+                <h1>State of the Industry</h1>
+                <h3 class="dim">what actually gets you hired</h3>
+                <div class="p20">
+                    Paul Sherer
+                    <div><small>@wolfymaster</small></div>
+                </div>
+                <div class="dim fs24">Erie County Technical School &mdash; Sept 28, 2026</div>
+                <div class="fs24 accent" style="margin-top:16px;">Architecture-first software that actually scales.</div>
+                <aside class="notes">
+                    <ul>
+                        <li>Thanks for having me back. Today isn't a coding lesson.</li>
+                        <li>Today is the honest version: what the software industry actually looks like right now, and what separates the people who get hired from the people who don't.</li>
+                        <li>I've been building software my whole career, I've hired developers, and I still build software every week.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Who am I</h2>
+                <ul class="space">
+                    <li>Software engineer &mdash; director, startup founder, consultant</li>
+                    <li class="fragment">Built software real companies run on</li>
+                    <li class="fragment">Clarion University of Pennsylvania</li>
+                    <li class="fragment">And yes, I've hired developers. I know what the resume pile looks like.</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>I've sat on both sides of the interview table.</li>
+                        <li>Everything today comes from that: what I wish someone told me at 17, and what I look for when hiring.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Where I've done it</h2>
+                <ul class="space">
+                    <li><strong class="accent">2016</strong> &mdash; Founding engineer, Pernix</li>
+                    <li><strong class="accent">2016</strong> &mdash; Springboard Bootcamp</li>
+                    <li><strong class="accent">2019</strong> &mdash; Founding engineer &amp; Director, SightGain</li>
+                    <li><strong class="accent">2022</strong> &mdash; Instructor, FullStack Academy</li>
+                    <li><strong class="accent">2025</strong> &mdash; Senior Engineer, MNTN</li>
+                    <li><strong class="accent">Today</strong> &mdash; Lead Engineer, Nemonx &middot; Founder, WoofX3 &middot; Senior Engineer, NCBI</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Affiliate marketing, cybersecurity, advertising, edtech, streaming, biotech. The domain changes every time; the fundamentals don't. That's the whole talk in one slide.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Roadmap</h2>
+                <ol class="space">
+                    <li>Part 1 &mdash; the industry right now (honest version)</li>
+                    <li>Part 2 &mdash; what actually gets you hired entry-level</li>
+                    <li>Part 3 &mdash; your questions</li>
+                </ol>
+                <aside class="notes">
+                    About 90 minutes of me talking, then your questions.
+                </aside>
+            </section>
+
+            <!-- PART 1 -->
+            <section>
+                <h1 class="heading invert">Part 1: The Industry, Honestly</h1>
+            </section>
+
+            <section>
+                <h2>Six years, three acts</h2>
+                <ul class="space">
+                    <li><strong class="accent">2020&ndash;2022:</strong> the hiring boom &mdash; money was free, everyone hired</li>
+                    <li class="fragment"><strong class="accent">2022&ndash;2026:</strong> the bust &mdash; the layoffs that never really stopped</li>
+                    <li class="fragment"><strong class="accent">2023&ndash;now:</strong> the AI wave &mdash; everything changed again</li>
+                </ul>
+                <aside class="notes">
+                    This is the recent history that shapes every job you'll ever apply for. And I'm not going to just assert it &mdash; I'm going to show you the receipts: real quotes from real reporting.
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>2020&ndash;2022: the boom</h2>
+                <p class="fs24 dim">Near-zero interest rates. Everything moved online. Companies hired like there was no tomorrow.</p>
+                <blockquote class="fragment excerpt">
+                    &ldquo;Remote interviews for technical roles grew by 370% on HackerRank&rsquo;s platform from 2019 to 2020 as companies pivoted business online.&rdquo;
+                    <div class="src">&mdash; Fast Company, Vivek Ravisankar, 2021</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment">Alphabet added <strong>30,000+</strong> jobs in 2022 alone. Microsoft added <strong>40,000</strong> in one fiscal year. (The Hustle, Jan 2023)</li>
+                    <li class="fragment">Median software dev salary: <strong>$120,730</strong> nationally &mdash; $167,420 around San Jose. (U.S. Bureau of Labor Statistics, May 2021)</li>
+                    <li class="fragment">Coding bootcamps reported &ldquo;historic enrollment surges.&rdquo; (Fast Company, 2021)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Money was nearly free to borrow, so companies hired ahead of growth that hadn't happened yet. Everyone believed the pandemic growth would last forever.</li>
+                        <li>Sources: Fast Company https://www.fastcompany.com/90618595/software-engineer-data-scientist-jobs-reskilling-bootcamps &mdash; The Hustle https://thehustle.co/01242023-tech-layoffs/ &mdash; BLS https://www.bls.gov/oes/2021/May/oes151252.htm</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>2022&ndash;2026: the bust</h2>
+                <blockquote class="excerpt">
+                    &ldquo;I got this wrong, and I take responsibility for that.&rdquo;
+                    <div class="src">&mdash; Mark Zuckerberg, after Meta laid off 11,000 (13% of the company) &mdash; NPR, Bobby Allyn, Nov 2022</div>
+                </blockquote>
+                <ul class="space">
+                    <li>2023 was the worst: ~262,682 tech layoffs. 2024 cooled to ~152,000. (Layoffs.fyi via Computerworld)</li>
+                    <li>2026 already passed all of 2025 &mdash; <strong>128,536</strong> cut by mid-September, at just 299 companies. Fewer companies cutting deeper.</li>
+                    <li>Amazon cut 16,000 in January; Meta 8,000 in May; Uber 3,300 this month. Employers named <strong>AI</strong> in 116,175 US cuts through August &mdash; the top reason given (Challenger, Gray &amp; Christmas)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The bust didn't end. It changed shape: fewer companies, deeper cuts, and now AI is the stated reason.</li>
+                        <li>Sources: Computerworld https://www.computerworld.com/article/1617283/tech-layoffs-in-2023-a-timeline.html &mdash; 2026 data via Second Talent https://www.secondtalent.com/resources/tech-layoffs-statistics/ &mdash; Crunchbase https://news.crunchbase.com/layoffs/2026-layoff-numbers-rise-ai-shift-orcl-meta-amzn/ &mdash; TechCrunch on Uber https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>2023&ndash;2026: the AI wave</h2>
+                <blockquote class="excerpt">
+                    &ldquo;AI tool adoption continues to climb, with 80% of developers now using them in their workflows.&rdquo;
+                    <div class="src">&mdash; Stack Overflow 2025 Developer Survey (49,000+ developers)</div>
+                </blockquote>
+                <ul class="space">
+                    <li><strong>66%</strong> of developers say they spend <em>more</em> time fixing &ldquo;almost-right&rdquo; AI-generated code</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Everyone uses the tools. The question is what it costs.</li>
+                        <li>Sources: Stack Overflow https://stackoverflow.blog/2025/12/29/developers-remain-willing-but-reluctant-to-use-ai-the-2025-developer-survey-results-are-here/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>The trust gap</h2>
+                <blockquote class="excerpt">
+                    &ldquo;Trust in the accuracy of AI has fallen from 40% in previous years to just 29% this year.&rdquo;
+                    <div class="src">&mdash; Stack Overflow 2025 Developer Survey</div>
+                </blockquote>
+                <ul class="space">
+                    <li>GitHub: 1.1M public repos now use an LLM SDK, up 178% in a year &mdash; though GitHub itself calls these &ldquo;observational signals rather than causal claims.&rdquo; (GitHub Octoverse 2025)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Widespread use has not translated into confidence. When the code gets complicated and the stakes are high, developers turn to people.</li>
+                        <li>Source: GitHub https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>2026: from chatbots to agents</h2>
+                <ul class="space">
+                    <li><strong>90%</strong> of professional developers use AI coding agents weekly; 68% daily (JetBrains, 2026)</li>
+                    <li><strong>53%</strong> have agents in production &mdash; but only 38% say their codebase is ready (Agoda, Sept 2026)</li>
+                    <li>Cursor hit <strong>$2B+</strong> in annual revenue in Feb 2026, doubling in three months</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The question shifted: not "can AI help write code?" but "how much autonomy do we give it?" Completion to agent is a dial, and every company is turning it up.</li>
+                        <li>Sources via industry compilations: JetBrains via https://quashbugs.com/blog/ai-coding-assistant-market-share-statistics &mdash; Agoda report https://techcoffeehouse.com/2026/09/27/agoda-report-ai-agents-outpace-firms-readiness/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>The leverage moved to review</h2>
+                <ul class="space">
+                    <li>High-AI teams ship <strong>4x</strong> more code &mdash; but churn up 861%, incidents per PR up 243%, defects 9% &rarr; 54% (Faros AI, 22,000 devs)</li>
+                    <li>Experienced devs were 19% <em>slower</em> with AI &mdash; while <em>feeling</em> 20% faster (METR)</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">Writing code was never the scarce skill. Judging code is. The agent types; you decide.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>This is the "using AI without getting dumb" point with receipts. Volume arrived faster than review process was designed to absorb.</li>
+                        <li>Sources via https://github.com/clewisdev/agentic-firehose/blob/HEAD/sources/2026-06-18-agentic-code-review.md (summarizing Faros AI, CodeRabbit, GitClear, METR)</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Meet the newest species: Jev</h2>
+                <ul class="space">
+                    <li>Released <strong>September 15, 2026</strong> &mdash; thirteen days ago &mdash; by TypeSafe AI (founded by ex-OpenAI researcher Diogo Almeida)</li>
+                    <li>It doesn&rsquo;t chat. You hand it context + a narrow question &mdash; <em>is this a refund request? which team handles this ticket? is this action safe?</em></li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The "AI" you'll work with in five years won't all look like ChatGPT. The field is speciating — and the engineers who understand which tool fits which job win.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Decisions, not paragraphs</h2>
+                <ul class="space">
+                    <li>Jev returns a <strong>typed answer with a confidence score</strong>, in milliseconds &mdash; something your software can act on directly</li>
+                    <li>Claimed 40&ndash;200x faster than frontier LLMs at a fraction of the cost &mdash; &ldquo;System One&rdquo; thinking, after Kahneman</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">We&rsquo;ve been hiring a novelist to sort our mail. AI is splitting into species &mdash; chat is just one of them.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Decision models, routing models, verification models: the pattern is "use a model only for the ambiguous judgement points, keep the rest in code."</li>
+                        <li>Caveats: thirteen days old, mostly vendor claims so far. Independent tests found it strong on moderation/routing, weak on grading answer quality — and it can still be confidently wrong, so confidence thresholds matter.</li>
+                        <li>Sources: https://www.linkedin.com/pulse/after-chatbot-ai-evolving-new-species-afzal-mohammed-urwpf &mdash; https://aimlapi.com/blog/what-is-jev</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>AI isn't free &mdash; and it isn't always there</h2>
+                <ul class="space">
+                    <li>Uber burned its entire 2026 AI budget in 4 months &mdash; then capped engineers at <strong>$1,500/month per tool</strong> (Bloomberg)</li>
+                    <li>Across 2,444 companies, every $1 of AI token spend produced about <strong>$0.18</strong> of realized value (Entelligence.AI)</li>
+                    <li>GitHub's August 2026 outage knocked Copilot offline for nearly <strong>8 hours</strong></li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">The meter is always running. Budget your tokens like you budget your servers.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Uber rolled out Claude Code in Dec 2025; by April engineers had consumed the full-year budget, at $500&ndash;$2,000 per engineer per month. The CTO's own demo burned ~$1,200 in tokens in two hours.</li>
+                        <li>Entelligence.AI (via TokenPost): the other $0.82 went to fixing AI-generated bugs ($0.44), rework ($0.27), and review ($0.11). Effort shifted, not removed.</li>
+                        <li>GitHub, Aug 17 2026: a misconfigured Istio policy blocked autoscaling and cascaded across Actions, PRs, APIs, and Copilot. If your workflow lives in the cloud, it stops when the cloud stops.</li>
+                        <li>Sources: https://www.inc.com/lucia-auerbach/uber-blew-through-2026-ai-budget-in-four-months-now-it-is-capping-employee-use/91355199 &mdash; https://tokenpost.com/news/insights/20922 &mdash; https://www.webpronews.com/githubs-8-hour-outage-caused-by-misconfigured-istio-policy-in-2026/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Is AI taking engineering jobs?</h2>
+                <p>One study: employment for 22&ndash;25-year-olds in AI-exposed roles fell about <strong>16%</strong> vs. the pre-pandemic trend.</p>
+                <ul class="space">
+                    <li>But: that decline started ~6 months <em>before</em> ChatGPT &mdash; economist David Deming</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>When someone tells you AI has already destroyed junior hiring, ask for the data &mdash; because the data cuts both ways.</li>
+                        <li>Source: Orbital Affairs, ~Sept 2026, summarizing Stanford-linked, NY Fed, and Ramp/Revelio research: https://www.orbitalaffairs.com/recent-grads-ai-remote-work-entry-level-hiring/ (trade press, not a major newspaper &mdash; treat as a map to the underlying studies)</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Or is it something else?</h2>
+                <ul class="space">
+                    <li>The NY Fed points more at <strong>remote-work dynamics</strong> than AI</li>
+                    <li>And: the biggest AI investors <em>increased</em> entry-level headcount ~12% over two years &mdash; Ramp/Revelio, 21,000+ firms</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">The honest answer: nobody knows yet. The data is genuinely mixed.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Same source: Orbital Affairs, ~Sept 2026: https://www.orbitalaffairs.com/recent-grads-ai-remote-work-entry-level-hiring/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Remote is shrinking &mdash; especially for juniors</h2>
+                <ul class="space">
+                    <li>Uber, September 2026: under <strong>1%</strong> of staff allowed to work remotely going forward &mdash; plus 20% fewer managers (TechCrunch)</li>
+                    <li>Entry-level remote roles were already the first to disappear &mdash; remember the NY Fed&rsquo;s remote-work finding</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">Being near senior engineers who review your code is how you level up. Proximity is a feature, not a bug.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>If your plan is "get hired remote straight out of school," have a plan B. The junior engineers who grow fastest sit near people who've done it for a decade.</li>
+                        <li>Source: TechCrunch https://techcrunch.com/2026/09/02/uber-is-laying-off-10-of-staff-or-3300-people/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <!-- HYPE VS REALITY -->
+            <section>
+                <h1 class="heading invert">Hype vs. Reality</h1>
+                <p class="dim">is AI a bubble?</p>
+                <aside class="notes">
+                    You'll hear two stories. Both are partly true. Let's look at the actual reporting on both sides.
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>The bull case</h2>
+                <blockquote class="fragment excerpt">
+                    &ldquo;&lsquo;AWS is booming,&rsquo; CEO Andy Jassy said in a statement, noting it was the unit&rsquo;s fastest growth in 18 quarters. &lsquo;Our AI and chips businesses each eclipsed run rates of more than $25 billion.&rsquo;&rdquo;
+                    <div class="src">&mdash; Reuters, July 2026</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment">Microsoft: Azure +43%, $678B cloud backlog &mdash; &ldquo;a sign Microsoft&rsquo;s massive AI spending bets were paying off.&rdquo; (Reuters, July 2026)</li>
+                    <li class="fragment">Goldman Sachs: the flood of AI infrastructure investment is &ldquo;sustainable.&rdquo; (Reuters, Oct 2025)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The bull case is simple: real revenue, real demand, sold-out capacity. Jassy says they can't build data centers fast enough through 2027.</li>
+                        <li>Sources: Reuters https://www.reuters.com/business/retail-consumer/amazon-beats-estimates-quarterly-cloud-revenue-growth-2026-07-30/ &mdash; Reuters https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/ &mdash; Reuters https://www.reuters.com/business/finance/opinions-split-over-ai-bubble-after-billions-invested-2025-10-16/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>The bear case</h2>
+                <blockquote class="excerpt">
+                    &ldquo;A new study by the Massachusetts Institute of Technology (MIT) has revealed that 95% of organisations are seeing zero return on their generative AI (GenAI) investments, despite $30&ndash;40 billion being poured into enterprise deployments.&rdquo;
+                    <div class="src">&mdash; Storyboard18, on MIT&rsquo;s 2025 &ldquo;GenAI Divide&rdquo; study</div>
+                </blockquote>
+                <ul class="space">
+                    <li>Michael Burry (of 2008 housing-bet fame) disclosed bearish bets against Nvidia and Palantir, warning the boom is propped up by &ldquo;circular deals.&rdquo; (Bloomberg, Nov 2025)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The bear case: the money flooding in is bigger than the money coming back. $30-40B spent with zero return at 95% of companies is a red flag no matter how you feel about AI.</li>
+                        <li>Caveats for Q&amp;A: Burry's "$1.1B" is 13F notional value, not cash invested &mdash; actual premiums were roughly 1/100th of that. The MIT 95% figure focuses on enterprise pilots and self-reported ROI, and later summaries note methodological limits.</li>
+                        <li>Sources: Storyboard18 https://www.storyboard18.com/amp/digital/study-finds-95-of-companies-see-no-return-on-ai-investments-due-to-learning-gap-81696.htm &mdash; Bloomberg (via republisher) https://www.thewealthadvisor.com/article/burry-discloses-puts-nvidia-and-palantir-after-bubble-warning</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="excerpt-slide">
+                <h2>Even the bulls are nervous</h2>
+                <ul class="space">
+                    <li>Bank of England: &ldquo;the risk of a sharp market correction has increased&rdquo; &mdash; spillover risk &ldquo;material.&rdquo; The IMF&rsquo;s chief economist warns a dotcom-style bust is possible. (Reuters, Oct 2025)</li>
+                    <li>Big Tech AI capex is set to exceed <strong>$700B</strong> this year &mdash; and even Amazon&rsquo;s free cash flow turned negative. (Reuters, July 2026)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Note the irony: the capex warning comes from inside the bull stories themselves &mdash; Reuters' Amazon piece flags overbuilding and negative free cash flow.</li>
+                        <li>Source: Reuters https://www.reuters.com/business/finance/opinions-split-over-ai-bubble-after-billions-invested-2025-10-16/ &mdash; Reuters https://www.reuters.com/business/retail-consumer/amazon-beats-estimates-quarterly-cloud-revenue-growth-2026-07-30/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>The honest read</h2>
+                <ul class="space">
+                    <li>The <strong>revenue</strong> is real: AI demand is genuinely outrunning supply right now.</li>
+                    <li class="fragment">The <strong>spending</strong> is also real: $700B+ a year on data centers can't grow forever.</li>
+                    <li class="fragment">The <strong>hype</strong> says AI replaces everyone. The <strong>data</strong> says developers use it daily, trust it less every year, and spend their time fixing its output.</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">Bubbles are about money. Careers are about skill. Even if the bubble pops, the judgment part of the job survives.</p>
+                <aside class="notes">
+                    This is the takeaway that connects back to the room: you can't control the money cycle. You can control whether you're the person who verifies, owns, and fixes things.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Sources</h2>
+                <ul class="fs24 space">
+                    <li>Fast Company &mdash; Vivek Ravisankar, 2021</li>
+                    <li>U.S. Bureau of Labor Statistics &mdash; May 2021</li>
+                    <li>The Hustle &mdash; Jan 24, 2023</li>
+                    <li>Computerworld &mdash; Charlotte Trueman, 2023&ndash;2024</li>
+                    <li>NPR &mdash; Bobby Allyn, Nov 9, 2022</li>
+                    <li>Stack Overflow 2025 Developer Survey</li>
+                    <li>GitHub Octoverse 2025</li>
+                    <li>Orbital Affairs &mdash; Sept 2026</li>
+                    <li>Reuters &mdash; July 2026 (Amazon, Microsoft earnings)</li>
+                    <li>Reuters &mdash; Dec 11, 2025 (&ldquo;AI bubble? Opinions divided&rdquo;)</li>
+                    <li>Bloomberg &mdash; Subrat Patnaik, Nov 4, 2025</li>
+                    <li>Storyboard18 &mdash; on MIT&rsquo;s 2025 &ldquo;GenAI Divide&rdquo; study</li>
+                </ul>
+                <aside class="notes">
+                    Full URLs live in each slide's notes. If a student asks for a link, pull it from there.
+                </aside>
+            </section>
+
+            <section>
+                <h2>What AI changed</h2>
+                <p>The easy code is free now.</p>
+                <ul class="space">
+                    <li class="fragment">Boilerplate, CRUD apps, simple scripts &mdash; seconds, not hours</li>
+                    <li class="fragment">"Write me a function that..." is a solved problem</li>
+                    <li class="fragment">Typing speed is no longer a skill that matters</li>
+                </ul>
+                <aside class="notes">
+                    If your entire skill set is "I can write a for loop," that skill just got commoditized. That's the bad news. The good news is next.
+                </aside>
+            </section>
+
+            <section>
+                <h2>What AI didn't change</h2>
+                <ul class="space">
+                    <li class="fragment">Someone has to decide <strong>what</strong> to build</li>
+                    <li class="fragment">Someone has to verify it's <strong>correct</strong></li>
+                    <li class="fragment">Someone has to debug it when it's wrong at 2am</li>
+                    <li class="fragment">Someone <strong>owns</strong> it in production</li>
+                </ul>
+                <p class="fragment" style="margin-top:30px;">Judgment is the job now.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>AI is confident and wrong on a regular basis. It hallucinates APIs that don't exist.</li>
+                        <li>The valuable person is the one who can look at AI output and say "this is right" or "this is subtly broken and here's why."</li>
+                        <li>That takes real understanding. There's no shortcut around it.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>The bar moved</h2>
+                <div class="left" style="max-width:800px; margin:0 auto;">
+                    <p><span class="dim">2015:</span> "can you write code?"</p>
+                    <p class="fragment"><span class="dim">2026:</span> "can you take a vague problem, ship something that works, <strong>and prove it works?</strong>"</p>
+                </div>
+                <aside class="notes">
+                    Employers stopped testing whether you can write syntax. They test whether you can solve problems and stand behind the result. Tests, demos, explaining your reasoning &mdash; that's the interview now.
+                </aside>
+            </section>
+
+            <section>
+                <h2>The junior market, honestly</h2>
+                <ul class="space">
+                    <li>More competitive than 5 years ago &mdash; I'm not going to lie to you</li>
+                    <li class="fragment">You're not competing against seniors</li>
+                    <li class="fragment">You're competing against other juniors...</li>
+                    <li class="fragment">...and the ones using AI well have real leverage</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Two years ago companies hired anyone who could fog a mirror and write JavaScript. That window closed.</li>
+                        <li>But: the juniors who stand out now stand out MORE, because the average applicant is weaker &mdash; lots of people with tutorial certificates and no real projects.</li>
+                        <li>Everything in part 2 is about being the applicant who stands out.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Where the demand actually is</h2>
+                <ul class="space">
+                    <li>Cybersecurity &mdash; always hiring, always will be</li>
+                    <li>AI/ML-adjacent roles &mdash; data pipelines, evals, integration</li>
+                    <li>Cloud &amp; infrastructure</li>
+                    <li>Data &mdash; every company is drowning in it</li>
+                    <li class="fragment"><strong>Boring business software.</strong> The unsexy stuff pays extremely well and nobody talks about it.</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Everyone wants to build the next social app. Nobody wants to build the invoicing system for a plumbing company.</li>
+                        <li>The plumbing company's invoicing system pays $120k and the founder will love you forever.</li>
+                        <li>Follow the money, not the hype.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Remote work</h2>
+                <p>Real. But:</p>
+                <ul class="space">
+                    <li class="fragment">Juniors get hired in-person / hybrid far more often</li>
+                    <li class="fragment">Your first job is probably local. That's fine.</li>
+                    <li class="fragment">Remote is something you earn with a track record</li>
+                </ul>
+                <aside class="notes">
+                    I work remotely now. My first jobs were in offices. Nobody hires a junior they've never met to work unsupervised &mdash; and honestly, you learn 10x faster sitting near experienced people.
+                </aside>
+            </section>
+
+            <!-- MYTHS -->
+            <section>
+                <h1 class="heading invert">Myths</h1>
+            </section>
+
+            <section>
+                <h2>Myth: "AI will take all the programming jobs"</h2>
+                <p class="fragment">It took the <strong>typing</strong>, not the <strong>thinking</strong>.</p>
+                <p class="fragment dim" style="margin-top:20px;">Compilers, open source, cloud &mdash; every wave made developers <em>more</em> valuable, not less.</p>
+                <aside class="notes">
+                    When compilers arrived, people said assembly programmers were done. Instead, software ate everything and we needed 100x more developers. AI raises the floor &mdash; more people can build software, which means more software gets built, which means more developers needed to own it.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Myth: "You need a CS degree"</h2>
+                <ul class="space">
+                    <li class="fragment">Helps for some doors. Opens zero doors by itself.</li>
+                    <li class="fragment">Portfolio + proof of work opens the rest.</li>
+                    <li class="fragment">When I hire, I look at what you <strong>built</strong> first.</li>
+                </ul>
+                <aside class="notes">
+                    A degree is a signal. "Here's a thing I built that real people use" is a louder signal. This room is at a technical school &mdash; you are already building the portfolio. Take that seriously.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Myth: "You need to be a math genius"</h2>
+                <p class="fragment">You need <strong>logical thinking</strong>.</p>
+                <p class="fragment dim" style="margin-top:20px;">Most dev jobs: arithmetic + logic + breaking big problems into small ones.</p>
+                <aside class="notes">
+                    Unless you're doing graphics, ML research, or crypto, you will not touch calculus. What you need is the ability to hold a system in your head and reason about what happens when X changes. That's trainable.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Myth: "Learn every language"</h2>
+                <p class="fragment">Learn <strong>one</strong> deeply.</p>
+                <p class="fragment dim" style="margin-top:20px;">Languages are tools. Learn to think &mdash; the rest transfers in weeks.</p>
+                <aside class="notes">
+                    I've written professionally in a dozen languages. The second one took a month, the third took two weeks. The hard part was learning the first one properly: data structures, control flow, how to structure a program. Pick Python or JavaScript and go deep.
+                </aside>
+            </section>
+
+            <!-- PART 2 -->
+            <section>
+                <h1 class="heading invert">Part 2: What Gets You Hired</h1>
+            </section>
+
+            <section>
+                <h2>Git + GitHub</h2>
+                <p>Non-negotiable.</p>
+                <ul class="space">
+                    <li class="fragment">Your GitHub <strong>is</strong> your resume</li>
+                    <li class="fragment">Commit history proves you actually build things</li>
+                    <li class="fragment">Learn branching, pull requests, merge conflicts &mdash; this is how teams work</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>First thing I do with an applicant: open their GitHub. Empty profile with a resume claiming "passionate developer"? Next.</li>
+                        <li>Green squares aren't the point &mdash; real projects with real commits are.</li>
+                        <li>If you take one thing from today: push code every week.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>One language, deeply</h2>
+                <p>Python <span class="dim">or</span> JavaScript / TypeScript</p>
+                <p class="fragment dim" style="margin-top:20px;">Build real things. Not tutorials. Things you actually use.</p>
+                <aside class="notes">
+                    Tutorial hell is real: you follow along, it works, you learned nothing. The learning happens when the tutorial ends and something breaks and nobody tells you why. Build a thing for yourself &mdash; a Discord bot, a budget tracker, a site for a club. Finish it. That's the whole game.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Linux command line</h2>
+                <p class="fs24 dim">cd &nbsp; ls &nbsp; grep &nbsp; ssh &nbsp; git from the terminal</p>
+                <ul class="space">
+                    <li class="fragment">Servers run Linux. All of them.</li>
+                    <li class="fragment">This alone puts you ahead of half the applicants</li>
+                </ul>
+                <aside class="notes">
+                    Most juniors have never SSH'd into anything. If you can navigate a Linux box, read logs, and restart a service, you are already useful on day one. It's a weekend of practice and it pays off forever.
+                </aside>
+            </section>
+
+            <section>
+                <h2>How the web actually works</h2>
+                <ul class="space">
+                    <li>HTTP &mdash; requests, responses, status codes</li>
+                    <li class="fragment">APIs &mdash; everything talks to everything via APIs now</li>
+                    <li class="fragment">JSON &mdash; the language data speaks</li>
+                </ul>
+                <aside class="notes">
+                    You don't need to memorize RFCs. But you should be able to explain what happens when you hit enter in a URL bar, and you should be comfortable calling an API and handling what comes back. That's 80% of modern development.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Basic SQL</h2>
+                <p class="fragment">Data lives in databases.</p>
+                <p class="fragment dim" style="margin-top:20px;">SELECT, JOIN, WHERE &mdash; a weekend of practice.</p>
+                <aside class="notes">
+                    Every app you've ever used is a pretty face on a database. If you can write a JOIN without googling it, you're ahead of most bootcamp grads. SQLite is free and runs everywhere &mdash; no excuses.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Debugging</h2>
+                <p>The #1 underrated skill.</p>
+                <ul class="space">
+                    <li class="fragment">Read the error message. <strong>All</strong> of it.</li>
+                    <li class="fragment">Bisect the problem &mdash; cut it in half until it's small</li>
+                    <li class="fragment">Explain it out loud (rubber duck works)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Senior devs aren't people who don't get errors. They're people who've seen 10,000 errors and have a system for the 10,001st.</li>
+                        <li>The error message usually tells you exactly what's wrong. Juniors ignore it and guess. Don't guess &mdash; read.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Using AI without getting dumb</h2>
+                <ul class="space">
+                    <li class="fragment">AI is a calculator for code &mdash; powerful, and wrong sometimes</li>
+                    <li class="fragment"><strong>Verify everything.</strong> Run it. Test it. Read it.</li>
+                    <li class="fragment">Never ship what you can't explain</li>
+                    <li class="fragment">If you can't explain it, you didn't learn it</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The juniors who thrive with AI use it to go faster at things they understand. The ones who drown paste output they can't read and get stuck the moment it breaks.</li>
+                        <li>Rule: if you couldn't write it yourself given enough time, don't ship the AI's version until you understand every line.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Three rules from people who do this all day</h2>
+                <ul class="space">
+                    <li><strong>Proof, not promises.</strong> No PR without tests or a demo that it works. &mdash; Osmani</li>
+                    <li><strong>Keep it small.</strong> Small diffs are easier for AI to get right and for you to review.</li>
+                    <li><strong>Never commit code you can't explain.</strong> &mdash; Willison</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">The engineers getting the most out of AI have the strongest fundamentals. That's not a coincidence.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Osmani: treat AI-generated code as a helpful draft that must be verified. AI is the first-pass reviewer &mdash; spellcheck, not the editor. Human review focuses on what AI misses: security holes, duplicated code, maintainability.</li>
+                        <li>Willison's anti-pattern: filing PRs with hundreds of unreviewed agent-generated lines. "They could have prompted an agent themselves. What value are you even providing?"</li>
+                        <li>Sources: https://addyosmani.com/blog/code-review-ai/ &mdash; https://addyo.substack.com/p/code-review-in-the-age-of-ai &mdash; https://github.com/atifkhan-mindbridge/learning-vibecoding/blob/HEAD/01-understanding-ai-assisted-coding.md</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Writing</h2>
+                <p class="fragment">Docs. Commit messages. Emails. Questions.</p>
+                <p class="fragment dim" style="margin-top:20px;">The devs who write clearly get promoted faster. Every time.</p>
+                <aside class="notes">
+                    Software is a team sport and teams run on writing. A clear commit message, a good bug report, a design doc people can actually follow &mdash; this is what separates mid-level from senior more than any technical skill. And it matters in interviews too: explain your thinking out loud, in order.
+                </aside>
+            </section>
+
+            <section>
+                <h2>The boring ones that matter</h2>
+                <ul class="space">
+                    <li>Show up. On time. Every time.</li>
+                    <li class="fragment">Communicate &mdash; "I'm stuck" early beats "I'm stuck" late</li>
+                    <li class="fragment">Take feedback without ego</li>
+                    <li class="fragment">Do what you said you'd do</li>
+                </ul>
+                <aside class="notes">
+                    I have hired for attitude over skill more than once. Skills can be taught in months; reliability can't. The number of juniors who flake, go silent, or argue with feedback is staggering. Just... don't be that person and you're top 20%.
+                </aside>
+            </section>
+
+            <!-- PLAYBOOK -->
+            <section>
+                <h1 class="heading invert">The Playbook</h1>
+                <p class="dim">if I were 17 today</p>
+            </section>
+
+            <section>
+                <h2>1. Build 3 real projects</h2>
+                <p class="fragment dim">Not tutorials. Things you actually use.</p>
+                <p class="fragment dim">GitHub repos with READMEs that explain what and why.</p>
+                <aside class="notes">
+                    Three finished projects beats thirty half-finished tutorials. "Finished" means: it works, there's a README, and someone other than you has used it. A README that explains the problem and your decisions is worth more than the code.
+                </aside>
+            </section>
+
+            <section>
+                <h2>2. Contribute to open source</h2>
+                <p class="fragment dim">Even docs fixes count.</p>
+                <p class="fragment dim">Proves you can work in a real codebase with real people.</p>
+                <aside class="notes">
+                    Find a project you use, look at issues labeled "good first issue." Your first PR will be terrifying and your tenth will be routine. Hiring managers light up when they see real merged PRs &mdash; it means someone else already vetted you.
+                </aside>
+            </section>
+
+            <section>
+                <h2>3. Learn in public</h2>
+                <p class="fragment dim">Write about what you build. Notes, blog, videos &mdash; pick one.</p>
+                <p class="fragment dim">Hiring managers google you. Give them something to find.</p>
+                <aside class="notes">
+                    You don't need an audience. Writing forces you to actually understand something &mdash; and a year of "here's what I built this month" is the strongest junior portfolio I've ever seen. It also proves the writing skill from earlier.
+                </aside>
+            </section>
+
+            <section>
+                <h2>4. Get paid experience anywhere</h2>
+                <ul class="space">
+                    <li>Internship</li>
+                    <li class="fragment">School IT help</li>
+                    <li class="fragment">Freelance for a local business</li>
+                </ul>
+                <p class="fragment" style="margin-top:20px;">"I shipped X for a real user" beats everything.</p>
+                <aside class="notes">
+                    Doesn't have to be a tech company. The kid who built the scheduling spreadsheet-app for their uncle's shop has a better story than the kid with a 4.0 and no projects. Real users, real constraints, real deadlines.
+                </aside>
+            </section>
+
+            <section>
+                <h1>Questions?</h1>
+                <div>
+                    <p>wolfy@wolfymaster.com | @wolfymaster</p>
+                    <p class="brandlogo" style="margin-top:20px;">Wolfy<span>Master</span></p>
+                </div>
+                <aside class="notes">
+                    Then Q&amp;A. After that, 1-on-1 with the student who asked to talk.
+                </aside>
+            </section>
+
+            <!-- END SLIDES -->
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            dependencies: [
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/sampler/sampler.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true },
+                { src: '//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js' },
+                { src: 'plugin/copycode/copycode.js', async: true },
+                //{ src: 'plugin/runcode/runcode.js', async: true }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
