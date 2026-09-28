@@ -311,8 +311,8 @@
             <section>
                 <h2>The leverage moved to review</h2>
                 <ul class="space">
-                    <li>Faros AI (22,000 developers, March 2026): high-AI-adoption teams ship <strong>4x</strong> more code &mdash; but code churn up 861%, incidents per PR up 243%, defect rate 9% &rarr; 54%</li>
-                    <li>METR research: experienced developers were 19% <em>slower</em> with AI help &mdash; while <em>feeling</em> 20% faster</li>
+                    <li>High-AI teams ship <strong>4x</strong> more code &mdash; but churn up 861%, incidents per PR up 243%, defects 9% &rarr; 54% (Faros AI, 22,000 devs)</li>
+                    <li>Experienced devs were 19% <em>slower</em> with AI &mdash; while <em>feeling</em> 20% faster (METR)</li>
                 </ul>
                 <p class="fragment accent" style="margin-top:24px;">Writing code was never the scarce skill. Judging code is. The agent types; you decide.</p>
                 <aside class="notes">
@@ -327,13 +327,25 @@
                 <h2>Meet the newest species: Jev</h2>
                 <ul class="space">
                     <li>Released <strong>September 15, 2026</strong> &mdash; thirteen days ago &mdash; by TypeSafe AI (founded by ex-OpenAI researcher Diogo Almeida)</li>
-                    <li>It doesn&rsquo;t chat. You hand it context + a narrow question &mdash; <em>is this a refund request? which team handles this ticket? is this action safe?</em> &mdash; and it returns a typed answer with a confidence score, in milliseconds</li>
+                    <li>It doesn&rsquo;t chat. You hand it context + a narrow question &mdash; <em>is this a refund request? which team handles this ticket? is this action safe?</em></li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The "AI" you'll work with in five years won't all look like ChatGPT. The field is speciating — and the engineers who understand which tool fits which job win.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Decisions, not paragraphs</h2>
+                <ul class="space">
+                    <li>Jev returns a <strong>typed answer with a confidence score</strong>, in milliseconds &mdash; something your software can act on directly</li>
                     <li>Claimed 40&ndash;200x faster than frontier LLMs at a fraction of the cost &mdash; &ldquo;System One&rdquo; thinking, after Kahneman</li>
                 </ul>
                 <p class="fragment accent" style="margin-top:24px;">We&rsquo;ve been hiring a novelist to sort our mail. AI is splitting into species &mdash; chat is just one of them.</p>
                 <aside class="notes">
                     <ul>
-                        <li>Why this matters to you: the "AI" you'll work with in five years won't all look like ChatGPT. Decision models, routing models, verification models — the field is speciating, and the engineers who understand which tool fits which job win.</li>
+                        <li>Decision models, routing models, verification models: the pattern is "use a model only for the ambiguous judgement points, keep the rest in code."</li>
                         <li>Caveats: thirteen days old, mostly vendor claims so far. Independent tests found it strong on moderation/routing, weak on grading answer quality — and it can still be confidently wrong, so confidence thresholds matter.</li>
                         <li>Sources: https://www.linkedin.com/pulse/after-chatbot-ai-evolving-new-species-afzal-mohammed-urwpf &mdash; https://aimlapi.com/blog/what-is-jev</li>
                     </ul>
