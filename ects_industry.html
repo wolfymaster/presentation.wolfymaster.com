@@ -26,7 +26,54 @@
         document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 
+    <!-- WolfyMaster brand: https://www.wolfymaster.com/brand -->
     <style type="text/css">
+        /* brand palette: coral #EC6758, purple #9146FF, light #F0F0FF, black #000000 */
+        body,
+        .reveal {
+            background: #000000;
+        }
+        .reveal {
+            color: #F0F0FF;
+            font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4 {
+            color: #EC6758;
+            font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .reveal code,
+        .reveal pre code {
+            font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+        .reveal a {
+            color: #9146FF;
+        }
+        .reveal .controls {
+            color: #9146FF;
+        }
+        .reveal .progress span {
+            background: #EC6758;
+        }
+        .reveal blockquote {
+            background: rgba(145, 70, 255, 0.12);
+            border-left: 4px solid #9146FF;
+            box-shadow: none;
+            padding: 20px;
+        }
+        .brandlogo {
+            font-family: Inter, -apple-system, "Segoe UI", sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: #EC6758;
+        }
+        .brandlogo span {
+            color: #F0F0FF;
+        }
         .space>li {
             margin: 10px 0;
         }
@@ -48,13 +95,27 @@
         }
 
         .heading.invert {
-            background: #eee8d5;
-            color: #002b36;
+            background: #EC6758;
+            color: #000000;
             padding: 10px;
         }
 
         .dim {
             color: #93a1a1;
+        }
+
+        .accent {
+            color: #9146FF;
+        }
+
+        .src {
+            font-size: 18px;
+            color: #93a1a1;
+            margin-top: 12px;
+        }
+
+        .excerpt {
+            font-size: 0.85em;
         }
     </style>
 </head>
@@ -65,6 +126,7 @@
 
             <!-- Title -->
             <section>
+                <div class="brandlogo">Wolfy<span>Master</span></div>
                 <h1>State of the Industry</h1>
                 <h3 class="dim">what actually gets you hired</h3>
                 <div class="p20">
@@ -72,6 +134,7 @@
                     <div><small>@wolfymaster</small></div>
                 </div>
                 <div class="dim fs24">Erie County Technical School &mdash; Sept 28, 2026</div>
+                <div class="fs24 accent" style="margin-top:16px;">Architecture-first software that actually scales.</div>
                 <aside class="notes">
                     <ul>
                         <li>Thanks for having me back. Today isn't a coding lesson.</li>
@@ -116,14 +179,176 @@
             </section>
 
             <section>
-                <h2>Software ate the world...</h2>
-                <p class="fragment">...and then AI showed up.</p>
+                <h2>Six years, three acts</h2>
+                <ul class="space">
+                    <li><strong class="accent">2020&ndash;2022:</strong> the hiring boom &mdash; money was free, everyone hired</li>
+                    <li class="fragment"><strong class="accent">2022&ndash;2024:</strong> the bust &mdash; the layoffs nobody saw coming</li>
+                    <li class="fragment"><strong class="accent">2023&ndash;now:</strong> the AI wave &mdash; everything changed again</li>
+                </ul>
+                <aside class="notes">
+                    This is the recent history that shapes every job you'll ever apply for. And I'm not going to just assert it &mdash; I'm going to show you the receipts: real quotes from real reporting.
+                </aside>
+            </section>
+
+            <section>
+                <h2>2020&ndash;2022: the boom</h2>
+                <p class="fs24 dim">Near-zero interest rates. Everything moved online. Companies hired like there was no tomorrow.</p>
+                <blockquote class="fragment excerpt">
+                    &ldquo;Remote interviews for technical roles grew by 370% on HackerRank&rsquo;s platform from 2019 to 2020 as companies pivoted business online.&rdquo;
+                    <div class="src">&mdash; Fast Company, Vivek Ravisankar, 2021</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment">Alphabet added <strong>30,000+</strong> jobs in 2022 alone. Microsoft added <strong>40,000</strong> in one fiscal year. (The Hustle, Jan 2023)</li>
+                    <li class="fragment">Median software dev salary: <strong>$120,730</strong> nationally &mdash; $167,420 around San Jose. (U.S. Bureau of Labor Statistics, May 2021)</li>
+                    <li class="fragment">Coding bootcamps reported &ldquo;historic enrollment surges.&rdquo; (Fast Company, 2021)</li>
+                </ul>
                 <aside class="notes">
                     <ul>
-                        <li>Every company is a software company now &mdash; banks, farms, hospitals, your school.</li>
-                        <li>And as of the last couple years, AI coding tools are standard equipment. Every professional developer I know uses them daily.</li>
-                        <li>This room needs to understand what that changed and what it didn't.</li>
+                        <li>Money was nearly free to borrow, so companies hired ahead of growth that hadn't happened yet. Everyone believed the pandemic growth would last forever.</li>
+                        <li>Sources: Fast Company https://www.fastcompany.com/90618595/software-engineer-data-scientist-jobs-reskilling-bootcamps &mdash; The Hustle https://thehustle.co/01242023-tech-layoffs/ &mdash; BLS https://www.bls.gov/oes/2021/May/oes151252.htm</li>
                     </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>2022&ndash;2024: the bust</h2>
+                <blockquote class="fragment excerpt">
+                    &ldquo;According to data compiled by Layoffs.fyi, the online tracker keeping tabs on job losses in the technology sector, 1,186 tech companies laid off about 262,682 staff in 2023, compared to 164,969 layoffs in 2022.&rdquo;
+                    <div class="src">&mdash; Computerworld, Charlotte Trueman, 2023</div>
+                </blockquote>
+                <blockquote class="fragment excerpt">
+                    &ldquo;Not only has online commerce returned to prior trends, but the macroeconomic downturn, increased competition, and ads signal loss have caused our revenue to be much lower than I&rsquo;d expected. I got this wrong, and I take responsibility for that.&rdquo;
+                    <div class="src">&mdash; Mark Zuckerberg, after Meta laid off 11,000 &mdash; NPR, Bobby Allyn, Nov 2022</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment">Why it happened: revenue declines, the macro downturn, and the end of cheap money. (The Hustle, Jan 2023, citing the NYT)</li>
+                    <li class="fragment">2024 cooled to &ldquo;just&rdquo; 152,104 layoffs at 547 companies &mdash; still brutal. (Computerworld, 2024)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The companies that overhired in the boom had to unwind it. Interest rates rose, investors stopped subsidizing long runways.</li>
+                        <li>Sources: Computerworld https://www.computerworld.com/article/1617283/tech-layoffs-in-2023-a-timeline.html &mdash; 2024 timeline https://www.computerworld.com/article/3816662/tech-layoffs-in-2024-a-timeline.html &mdash; NPR https://www.cfpublic.org/2022-11-09/meta-lays-off-11-000-employees</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>2023&ndash;2026: the AI wave</h2>
+                <blockquote class="fragment excerpt">
+                    &ldquo;AI tool adoption continues to climb, with 80% of developers now using them in their workflows.&rdquo;
+                    <div class="src">&mdash; Stack Overflow 2025 Developer Survey (49,000+ developers)</div>
+                </blockquote>
+                <blockquote class="fragment excerpt">
+                    &ldquo;Yet this widespread use has not translated into confidence. In fact, trust in the accuracy of AI has fallen from 40% in previous years to just 29% this year.&rdquo;
+                    <div class="src">&mdash; Stack Overflow 2025 Developer Survey</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment"><strong>66%</strong> of developers say they spend <em>more</em> time fixing &ldquo;almost-right&rdquo; AI-generated code</li>
+                    <li class="fragment">GitHub: 1.1M public repos now use an LLM SDK, up 178% in a year &mdash; though GitHub itself calls these &ldquo;observational signals rather than causal claims.&rdquo; (GitHub Octoverse 2025)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Everyone uses the tools. Everyone trusts them less. That's the reality underneath the hype.</li>
+                        <li>Sources: Stack Overflow https://stackoverflow.blog/2025/12/29/developers-remain-willing-but-reluctant-to-use-ai-the-2025-developer-survey-results-are-here/ &mdash; GitHub https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Is AI taking engineering jobs?</h2>
+                <p class="fragment">One study: employment for 22&ndash;25-year-olds in AI-exposed roles fell about <strong>16%</strong> vs. the pre-pandemic trend.</p>
+                <ul class="space">
+                    <li class="fragment">But: that decline started ~6 months <em>before</em> ChatGPT &mdash; economist David Deming</li>
+                    <li class="fragment">The NY Fed points more at <strong>remote-work dynamics</strong> than AI</li>
+                    <li class="fragment">And: the biggest AI investors <em>increased</em> entry-level headcount ~12% over two years &mdash; Ramp/Revelio, 21,000+ firms</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">The honest answer: nobody knows yet. The data is genuinely mixed.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>When someone tells you AI has already destroyed junior hiring, ask for the data &mdash; because the data cuts both ways.</li>
+                        <li>Source: Orbital Affairs, ~Sept 2026, summarizing Stanford-linked, NY Fed, and Ramp/Revelio research: https://www.orbitalaffairs.com/recent-grads-ai-remote-work-entry-level-hiring/ (trade press, not a major newspaper &mdash; treat as a map to the underlying studies)</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <!-- HYPE VS REALITY -->
+            <section>
+                <h1 class="heading invert">Hype vs. Reality</h1>
+                <p class="dim">is AI a bubble?</p>
+                <aside class="notes">
+                    You'll hear two stories. Both are partly true. Let's look at the actual reporting on both sides.
+                </aside>
+            </section>
+
+            <section>
+                <h2>The bull case</h2>
+                <blockquote class="fragment excerpt">
+                    &ldquo;&lsquo;AWS is booming,&rsquo; CEO Andy Jassy said in a statement, noting it was the unit&rsquo;s fastest growth in 18 quarters. &lsquo;Our AI and chips businesses each eclipsed run rates of more than $25 billion.&rsquo;&rdquo;
+                    <div class="src">&mdash; Reuters, July 2026</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment">Microsoft: Azure +43%, $678B cloud backlog &mdash; &ldquo;a sign Microsoft&rsquo;s massive AI spending bets were paying off.&rdquo; (Reuters, July 2026)</li>
+                    <li class="fragment">Goldman Sachs: the flood of AI infrastructure investment is &ldquo;sustainable.&rdquo; (Reuters, Oct 2025)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The bull case is simple: real revenue, real demand, sold-out capacity. Jassy says they can't build data centers fast enough through 2027.</li>
+                        <li>Sources: Reuters https://www.reuters.com/business/retail-consumer/amazon-beats-estimates-quarterly-cloud-revenue-growth-2026-07-30/ &mdash; Reuters https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/ &mdash; Reuters https://www.reuters.com/business/finance/opinions-split-over-ai-bubble-after-billions-invested-2025-10-16/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>The bear case</h2>
+                <blockquote class="fragment excerpt">
+                    &ldquo;A new study by the Massachusetts Institute of Technology (MIT) has revealed that 95% of organisations are seeing zero return on their generative AI (GenAI) investments, despite $30&ndash;40 billion being poured into enterprise deployments.&rdquo;
+                    <div class="src">&mdash; Storyboard18, on MIT&rsquo;s 2025 &ldquo;GenAI Divide&rdquo; study</div>
+                </blockquote>
+                <ul class="space">
+                    <li class="fragment">Michael Burry (of 2008 housing-bet fame) disclosed bearish bets against Nvidia and Palantir, warning the boom is propped up by &ldquo;circular deals.&rdquo; (Bloomberg, Nov 2025)</li>
+                    <li class="fragment">Bank of England: &ldquo;the risk of a sharp market correction has increased&rdquo; &mdash; spillover risk &ldquo;material.&rdquo; The IMF&rsquo;s chief economist warns a dotcom-style bust is possible. (Reuters, Oct 2025)</li>
+                    <li class="fragment">Big Tech AI capex is set to exceed <strong>$700B</strong> this year &mdash; and even Amazon&rsquo;s free cash flow turned negative. (Reuters, July 2026)</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>The bear case: the money flooding in is bigger than the money coming back. $30-40B spent with zero return at 95% of companies is a red flag no matter how you feel about AI.</li>
+                        <li>Caveats for Q&amp;A: Burry's "$1.1B" is 13F notional value, not cash invested &mdash; actual premiums were roughly 1/100th of that. The MIT 95% figure focuses on enterprise pilots and self-reported ROI, and later summaries note methodological limits.</li>
+                        <li>Sources: Storyboard18 https://www.storyboard18.com/amp/digital/study-finds-95-of-companies-see-no-return-on-ai-investments-due-to-learning-gap-81696.htm &mdash; Bloomberg (via republisher) https://www.thewealthadvisor.com/article/burry-discloses-puts-nvidia-and-palantir-after-bubble-warning &mdash; Reuters bubble piece https://www.reuters.com/business/finance/opinions-split-over-ai-bubble-after-billions-invested-2025-10-16/</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>The honest read</h2>
+                <ul class="space">
+                    <li>The <strong>revenue</strong> is real: AI demand is genuinely outrunning supply right now.</li>
+                    <li class="fragment">The <strong>spending</strong> is also real: $700B+ a year on data centers can't grow forever.</li>
+                    <li class="fragment">The <strong>hype</strong> says AI replaces everyone. The <strong>data</strong> says developers use it daily, trust it less every year, and spend their time fixing its output.</li>
+                </ul>
+                <p class="fragment accent" style="margin-top:24px;">Bubbles are about money. Careers are about skill. Even if the bubble pops, the judgment part of the job survives.</p>
+                <aside class="notes">
+                    This is the takeaway that connects back to the room: you can't control the money cycle. You can control whether you're the person who verifies, owns, and fixes things.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Sources</h2>
+                <ul class="fs24 space">
+                    <li>Fast Company &mdash; Vivek Ravisankar, 2021</li>
+                    <li>U.S. Bureau of Labor Statistics &mdash; May 2021</li>
+                    <li>The Hustle &mdash; Jan 24, 2023</li>
+                    <li>Computerworld &mdash; Charlotte Trueman, 2023&ndash;2024</li>
+                    <li>NPR &mdash; Bobby Allyn, Nov 9, 2022</li>
+                    <li>Stack Overflow 2025 Developer Survey</li>
+                    <li>GitHub Octoverse 2025</li>
+                    <li>Orbital Affairs &mdash; Sept 2026</li>
+                    <li>Reuters &mdash; July 2026 (Amazon, Microsoft earnings)</li>
+                    <li>Reuters &mdash; Dec 11, 2025 (&ldquo;AI bubble? Opinions divided&rdquo;)</li>
+                    <li>Bloomberg &mdash; Subrat Patnaik, Nov 4, 2025</li>
+                    <li>Storyboard18 &mdash; on MIT&rsquo;s 2025 &ldquo;GenAI Divide&rdquo; study</li>
+                </ul>
+                <aside class="notes">
+                    Full URLs live in each slide's notes. If a student asks for a link, pull it from there.
                 </aside>
             </section>
 
@@ -450,6 +675,7 @@
                 <h1>Questions?</h1>
                 <div>
                     <p>wolfy@wolfymaster.com | @wolfymaster</p>
+                    <p class="brandlogo" style="margin-top:20px;">Wolfy<span>Master</span></p>
                 </div>
                 <aside class="notes">
                     Then we flip to interviews. Who's first?
