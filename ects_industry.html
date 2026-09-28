@@ -63,7 +63,21 @@
             background: rgba(145, 70, 255, 0.12);
             border-left: 4px solid #9146FF;
             box-shadow: none;
-            padding: 20px;
+            padding: 12px 18px;
+            margin: 12px auto;
+            max-width: 90%;
+            font-size: 0.68em;
+            line-height: 1.4;
+        }
+        .reveal blockquote .src {
+            font-size: 0.8em;
+            margin-top: 6px;
+        }
+        .excerpt-slide ul {
+            font-size: 0.82em;
+        }
+        .excerpt-slide .space>li {
+            margin: 6px 0;
         }
         .brandlogo {
             font-family: Inter, -apple-system, "Segoe UI", sans-serif;
@@ -190,7 +204,7 @@
                 </aside>
             </section>
 
-            <section>
+            <section class="excerpt-slide">
                 <h2>2020&ndash;2022: the boom</h2>
                 <p class="fs24 dim">Near-zero interest rates. Everything moved online. Companies hired like there was no tomorrow.</p>
                 <blockquote class="fragment excerpt">
@@ -210,15 +224,15 @@
                 </aside>
             </section>
 
-            <section>
+            <section class="excerpt-slide">
                 <h2>2022&ndash;2024: the bust</h2>
                 <blockquote class="fragment excerpt">
                     &ldquo;According to data compiled by Layoffs.fyi, the online tracker keeping tabs on job losses in the technology sector, 1,186 tech companies laid off about 262,682 staff in 2023, compared to 164,969 layoffs in 2022.&rdquo;
                     <div class="src">&mdash; Computerworld, Charlotte Trueman, 2023</div>
                 </blockquote>
                 <blockquote class="fragment excerpt">
-                    &ldquo;Not only has online commerce returned to prior trends, but the macroeconomic downturn, increased competition, and ads signal loss have caused our revenue to be much lower than I&rsquo;d expected. I got this wrong, and I take responsibility for that.&rdquo;
-                    <div class="src">&mdash; Mark Zuckerberg, after Meta laid off 11,000 &mdash; NPR, Bobby Allyn, Nov 2022</div>
+                    &ldquo;I got this wrong, and I take responsibility for that.&rdquo;
+                    <div class="src">&mdash; Mark Zuckerberg, after Meta laid off 11,000 (13% of the company) &mdash; NPR, Bobby Allyn, Nov 2022</div>
                 </blockquote>
                 <ul class="space">
                     <li class="fragment">Why it happened: revenue declines, the macro downturn, and the end of cheap money. (The Hustle, Jan 2023, citing the NYT)</li>
@@ -227,19 +241,20 @@
                 <aside class="notes">
                     <ul>
                         <li>The companies that overhired in the boom had to unwind it. Interest rates rose, investors stopped subsidizing long runways.</li>
+                        <li>Full Zuckerberg quote to read aloud if you want it: &ldquo;Calling the layoffs &lsquo;some of the most difficult changes we&rsquo;ve made in Meta&rsquo;s history,&rsquo; Meta CEO Mark Zuckerberg said the company overhired during the pandemic, assuming the ultra-rapid growth would keep going. &lsquo;Not only has online commerce returned to prior trends, but the macroeconomic downturn, increased competition, and ads signal loss have caused our revenue to be much lower than I&rsquo;d expected. I got this wrong, and I take responsibility for that.&rsquo;&rdquo;</li>
                         <li>Sources: Computerworld https://www.computerworld.com/article/1617283/tech-layoffs-in-2023-a-timeline.html &mdash; 2024 timeline https://www.computerworld.com/article/3816662/tech-layoffs-in-2024-a-timeline.html &mdash; NPR https://www.cfpublic.org/2022-11-09/meta-lays-off-11-000-employees</li>
                     </ul>
                 </aside>
             </section>
 
-            <section>
+            <section class="excerpt-slide">
                 <h2>2023&ndash;2026: the AI wave</h2>
                 <blockquote class="fragment excerpt">
                     &ldquo;AI tool adoption continues to climb, with 80% of developers now using them in their workflows.&rdquo;
                     <div class="src">&mdash; Stack Overflow 2025 Developer Survey (49,000+ developers)</div>
                 </blockquote>
                 <blockquote class="fragment excerpt">
-                    &ldquo;Yet this widespread use has not translated into confidence. In fact, trust in the accuracy of AI has fallen from 40% in previous years to just 29% this year.&rdquo;
+                    &ldquo;Trust in the accuracy of AI has fallen from 40% in previous years to just 29% this year.&rdquo;
                     <div class="src">&mdash; Stack Overflow 2025 Developer Survey</div>
                 </blockquote>
                 <ul class="space">
@@ -280,7 +295,7 @@
                 </aside>
             </section>
 
-            <section>
+            <section class="excerpt-slide">
                 <h2>The bull case</h2>
                 <blockquote class="fragment excerpt">
                     &ldquo;&lsquo;AWS is booming,&rsquo; CEO Andy Jassy said in a statement, noting it was the unit&rsquo;s fastest growth in 18 quarters. &lsquo;Our AI and chips businesses each eclipsed run rates of more than $25 billion.&rsquo;&rdquo;
@@ -298,7 +313,7 @@
                 </aside>
             </section>
 
-            <section>
+            <section class="excerpt-slide">
                 <h2>The bear case</h2>
                 <blockquote class="fragment excerpt">
                     &ldquo;A new study by the Massachusetts Institute of Technology (MIT) has revealed that 95% of organisations are seeing zero return on their generative AI (GenAI) investments, despite $30&ndash;40 billion being poured into enterprise deployments.&rdquo;
